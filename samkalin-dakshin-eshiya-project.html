@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<title>समकालीन दक्षिण एशिया — प्रोजेक्ट फाइल</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;font-family:'Kalam','Noto Sans Devanagari',cursive;color:#26343f;background:#e9e2d0}
+.page{width:210mm;height:297mm;background:#fffdf4;position:relative;overflow:hidden;page-break-after:always;padding:11mm 10mm}
+.page:last-child{page-break-after:auto}
+.frame{position:absolute;top:6mm;left:6mm;right:6mm;bottom:6mm;border:2.6px solid #1a3c6e;border-radius:5mm;pointer-events:none}
+.frame::before{content:"";position:absolute;top:2mm;left:2mm;right:2mm;bottom:2mm;border:1.2px dashed #c9a227;border-radius:3.5mm}
+.corner{position:absolute;width:16mm;height:16mm;z-index:5}
+.corner svg{width:100%;height:100%}
+.c-tl{top:4.2mm;left:4.2mm}.c-tr{top:4.2mm;right:4.2mm;transform:scaleX(-1)}
+.c-bl{bottom:4.2mm;left:4.2mm;transform:scaleY(-1)}.c-br{bottom:4.2mm;right:4.2mm;transform:scale(-1)}
+.pghead{display:flex;align-items:center;gap:3mm;border-bottom:2px solid #1a3c6e;padding-bottom:2mm;margin-bottom:4.5mm}
+.pghead .dot{width:5mm;height:5mm;flex:none}
+.pghead .t{flex:1;text-align:center;font-size:13.5pt;color:#1a3c6e;letter-spacing:.4px}
+.pghead .sub{font-size:9.5pt;color:#7a6a45}
+.pgfoot{position:absolute;bottom:7.5mm;left:0;right:0;text-align:center;font-size:9.5pt;color:#8a6d1f}
+.pgfoot b{display:inline-block;background:#1a3c6e;color:#fffdf4;padding:.4mm 3.5mm;border-radius:2.5mm;font-weight:bold}
+.sec-t{font-family:'Yatra One','Noto Sans Devanagari',cursive;text-align:center;font-size:19pt;color:#b3001b;margin:1mm 0 4.5mm;line-height:1.25}
+.sec-t small{display:block;font-family:'Kalam','Noto Sans Devanagari',cursive;font-size:10.5pt;color:#7a6a45;margin-top:.5mm}
+.rule{display:flex;justify-content:center;margin:-2.5mm 0 4mm}
+.rule svg{width:70mm;height:4mm}
+.body{font-size:11.5pt;line-height:1.62;text-align:justify;color:#2d3b46}
+.body p{margin:0 0 2.6mm}
+.body .lead{font-size:12.5pt}
+b.hd{color:#1a3c6e}
+.mrk{background:linear-gradient(transparent 55%, #ffe9a8 55%);padding:0 1px}
+.pt{font-weight:bold;color:#b3001b}
+.box{border:1.6px solid #1a3c6e;border-radius:3.5mm;padding:3mm 4mm;background:#fff;margin:3mm 0;position:relative}
+.box.y{background:#fff8e3;border-color:#c9a227}
+.box.g{background:#eef7ee;border-color:#2e7d32}
+.box .bt{display:inline-block;background:#1a3c6e;color:#fffdf4;font-size:10.5pt;padding:.6mm 4mm;border-radius:2.5mm;margin:-6.2mm 0 2mm -1mm;box-shadow:.6mm .6mm 0 #c9a227}
+.box.y .bt{background:#a67c00}.box.g .bt{background:#2e7d32}
+ul.tick{list-style:none;margin:0;padding:0}
+ul.tick li{padding-left:7mm;position:relative;margin-bottom:1.9mm;line-height:1.5}
+ul.tick li::before{content:"✦";position:absolute;left:1mm;top:-.3mm;color:#e67e22;font-size:11pt}
+table{width:100%;border-collapse:collapse;font-size:10.5pt;margin:2.5mm 0}
+th{background:#1a3c6e;color:#fffdf4;padding:1.8mm 2.4mm;border:1px solid #1a3c6e;font-weight:bold;text-align:center}
+td{border:1px solid #9db3c8;padding:1.7mm 2.6mm;vertical-align:top;line-height:1.4}
+tr:nth-child(even) td{background:#f2f7fc}
+td.c{text-align:center}
+.drw{text-align:center;margin:2.5mm 0 1mm}
+.drw svg{max-width:100%}
+.cap{font-size:9pt;color:#7a6a45;text-align:center;margin-top:.6mm;font-style:normal}
+.capt{font-size:9.5pt;color:#7a6a45;text-align:center;margin:1mm 0 2.5mm}
+.sig{display:flex;justify-content:space-between;margin-top:8mm}
+.sig .s{text-align:center;width:30%}
+.sig .ln{border-top:1.4px solid #26343f;margin-bottom:1.2mm;padding-top:.5mm;font-size:9pt;color:#5a6874}
+.blank{display:inline-block;min-width:52mm;border-bottom:1.3px dotted #5a6874}
+.stamp{position:absolute;transform:rotate(-8deg);border:2.2px solid #b3001b;color:#b3001b;border-radius:2mm;padding:1.4mm 4mm;font-size:11pt;font-weight:bold;opacity:.75;letter-spacing:1px}
+.flagrow{display:flex;justify-content:space-between;gap:2mm;margin:3mm 0}
+.flag{flex:1;text-align:center}
+.flag .f{width:100%;height:11mm;border:1px solid #b9c4d0;border-radius:1.4mm;background:#fff;overflow:hidden}
+.flag .n{font-size:8.6pt;color:#41505c;margin-top:.8mm;line-height:1.15}
+.tl{position:relative;margin:3mm 0 1mm;padding-left:26mm}
+.tl .yr{position:absolute;left:0;width:20mm;text-align:center;background:#e67e22;color:#fff;font-weight:bold;border-radius:2.5mm;padding:.7mm 0;font-size:10pt;box-shadow:.7mm .7mm 0 #b35900}
+.tl .tx{border-left:2.4px dotted #e67e22;padding:0 0 2.4mm 4mm;margin:-.6mm 0 0 0;min-height:4mm;font-size:10.8pt;line-height:1.45}
+.tl .tx span{color:#7a6a45;font-size:9.2pt}
+.two{display:flex;gap:4mm;align-items:flex-start}
+.two .l{flex:1.05}.two .r{flex:1}
+.quote{font-family:'Tiro Devanagari Hindi','Noto Sans Devanagari',serif;text-align:center;color:#1a3c6e;font-size:12.5pt;margin:3.5mm 0;border-top:1.4px solid #c9a227;border-bottom:1.4px solid #c9a227;padding:2.2mm 2mm;line-height:1.6}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Yatra+One&family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@media screen{
+  body{padding:14mm 0 20mm}
+  .printbar{position:fixed;top:0;left:0;right:0;z-index:99;background:#1a3c6e;color:#fffdf4;
+    padding:8px 16px;font-size:13.5px;display:flex;gap:10px;align-items:center;justify-content:center;
+    font-family:'Kalam','Noto Sans Devanagari',cursive;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+  .printbar b{color:#ffd76a}
+  .dl{position:fixed;right:18px;bottom:18px;z-index:99;background:#b3001b;color:#fff;border:none;cursor:pointer;
+    font-family:'Kalam','Noto Sans Devanagari',cursive;font-size:16px;font-weight:bold;padding:12px 22px;border-radius:40px;
+    box-shadow:0 4px 14px rgba(179,0,27,.45);transition:.2s}
+  .dl:hover{transform:scale(1.05);background:#8f0015}
+  .page{margin:8mm auto;box-shadow:0 4px 22px rgba(0,0,0,.35)}
+}
+@media print{ .printbar,.dl{display:none!important} body{padding:0} .page{margin:0;box-shadow:none} }
+</style>
+<div class="printbar">📄 <b>प्रोजेक्ट फाइल</b> — डाउनलोड के लिए नीचे दाएँ <b>“PDF डाउनलोड करें”</b> बटन दबाएँ → डायलॉग में <b>Destination: Save as PDF</b> चुनें, <b>Margins: None</b> व <b>Background graphics ✓</b> रखें → <b>Save</b></div>
+<button class="dl" onclick="window.print()">⬇️ पूरी प्रोजेक्ट (17 पेज) PDF डाउनलोड करें</button>
+
+</head>
+<body>
+
+<!-- ═══════════════ PAGE 1 : मुखपृष्ठ ═══════════════ -->
+<div class="page" id="p1">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/><circle cx="6" cy="6" r="2.2" fill="#b3001b"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/><circle cx="6" cy="6" r="2.2" fill="#b3001b"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/><circle cx="6" cy="6" r="2.2" fill="#b3001b"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/><circle cx="6" cy="6" r="2.2" fill="#b3001b"/></svg></div>
+
+<div style="text-align:center;margin-top:2mm">
+  <div style="font-size:12pt;color:#7a6a45;letter-spacing:.6px">विद्यालय का नाम</div>
+  <div style="font-family:'Tiro Devanagari Hindi','Noto Sans Devanagari',serif;font-size:20pt;color:#1a3c6e;border-bottom:2.2px solid #c9a227;display:inline-block;padding:0 14mm 1.4mm;margin-top:1mm">____________________________</div>
+</div>
+
+<div style="text-align:center;margin:4.5mm 0 2mm">
+  <span style="display:inline-block;border:2px solid #e67e22;border-radius:6mm;padding:1.6mm 9mm;font-family:'Yatra One','Noto Sans Devanagari',cursive;font-size:14.5pt;color:#e67e22;letter-spacing:1px">कक्षा 12 — राजनीति विज्ञान (भाग 2)</span>
+</div>
+
+<div style="text-align:center;margin:2.5mm 0 0">
+  <div style="font-size:11pt;color:#7a6a45">अध्याय 5 पर आधारित प्रोजेक्ट फाइल</div>
+  <h1 style="font-family:'Yatra One','Noto Sans Devanagari',cursive;font-size:34pt;color:#b3001b;margin:2mm 0 1mm;text-shadow:1.4px 1.4px 0 #ffe9a8;line-height:1.15">समकालीन दक्षिण एशिया</h1>
+  <div style="font-family:'Tiro Devanagari Hindi','Noto Sans Devanagari',serif;font-size:15pt;color:#1a3c6e;letter-spacing:2.5px">CONTEMPORARY SOUTH ASIA</div>
+</div>
+
+<!-- दक्षिण एशिया मानचित्र (सरलीकृत) -->
+<div style="display:flex;justify-content:center;margin:5mm 0 2mm">
+<svg viewBox="0 0 340 250" style="width:118mm;height:87mm">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff0fb"/><stop offset="1" stop-color="#c3e2f5"/></linearGradient>
+  </defs>
+  <rect x="2" y="2" width="336" height="246" rx="10" fill="url(#sea)" stroke="#1a3c6e" stroke-width="2"/>
+  <path d="M20 18 q8 6 16 0 q8 6 16 0 M280 210 q8 6 16 0 q8 6 16 0" stroke="#8fc3e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M258 34 q4 3 8 0" stroke="#8fc3e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- अफ़ग़ानिस्तान -->
+  <path d="M52 40 L108 30 L116 62 L96 78 L58 74 Z" fill="#d9c2f0" stroke="#6a3fa0" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- पाकिस्तान -->
+  <path d="M58 74 L96 78 L116 62 L128 96 L112 138 L84 146 L66 118 Z" fill="#bfe3c0" stroke="#2e7d32" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- भारत -->
+  <path d="M116 62 L152 66 L176 60 L214 70 L228 104 L206 140 L192 178 L172 208 L162 176 L138 142 L112 138 L128 96 Z" fill="#ffd9b3" stroke="#e67e22" stroke-width="2" stroke-linejoin="round"/>
+  <!-- नेपाल -->
+  <path d="M176 60 L214 70 L210 84 L176 76 Z" fill="#cfe6f7" stroke="#1a5f9e" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- भूटान -->
+  <rect x="214" y="70" width="26" height="14" rx="4" fill="#fff2b3" stroke="#a67c00" stroke-width="1.8" transform="rotate(6 227 77)"/>
+  <!-- बांग्लादेश -->
+  <path d="M228 104 L252 100 L258 122 L242 138 L232 128 Z" fill="#c6f0d8" stroke="#1e8e4e" stroke-width="1.8" stroke-linejoin="round"/>
+  <!-- श्रीलंका -->
+  <path d="M196 226 q-8 -18 4 -30 q12 -8 18 4 q4 16 -8 26 q-8 6 -14 0 Z" fill="#ffe0b2" stroke="#c96a1a" stroke-width="1.8"/>
+  <!-- मालदीव -->
+  <circle cx="148" cy="236" r="3.4" fill="#2e7d32"/><circle cx="143" cy="243" r="2.6" fill="#2e7d32"/><circle cx="153" cy="243" r="2.6" fill="#2e7d32"/>
+  <path d="M60 20 q40 -10 80 -2" stroke="#8a6d1f" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <text x="76" y="52" font-size="11.5" fill="#4a2f7a" font-weight="bold" font-family="Kalam">अफ़ग़ानिस्तान</text>
+  <text x="58" y="112" font-size="12" fill="#205c24" font-weight="bold" font-family="Kalam">पाकिस्तान</text>
+  <text x="152" y="118" font-size="15" fill="#a35400" font-weight="bold" font-family="Kalam">भारत</text>
+  <text x="180" y="55" font-size="10" fill="#15507f" font-weight="bold" font-family="Kalam">नेपाल</text>
+  <text x="216" y="66" font-size="8.5" fill="#8a6d1f" font-weight="bold" font-family="Kalam">भूटान</text>
+  <text x="228" y="116" font-size="8.8" fill="#155c33" font-weight="bold" font-family="Kalam">बांग्लादेश</text>
+  <text x="196" y="214" font-size="10" fill="#a35400" font-weight="bold" font-family="Kalam" transform="rotate(-18 204 214)">श्रीलंका</text>
+  <text x="104" y="246" font-size="9" fill="#205c24" font-weight="bold" font-family="Kalam">मालदीव</text>
+  <g transform="translate(296,206)">
+    <circle cx="0" cy="0" r="15" fill="#fff" stroke="#1a3c6e" stroke-width="1.8"/>
+    <path d="M0 -15 V15 M-15 0 H15" stroke="#b9c4d0" stroke-width="1"/>
+    <path d="M0 -11 L4 0 L0 11 L-4 0 Z" fill="#b3001b"/>
+    <text x="0" y="28" font-size="9" text-anchor="middle" fill="#1a3c6e" font-weight="bold" font-family="Kalam">उत्तर</text>
+  </g>
+  <text x="286" y="160" font-size="9" fill="#41505c" font-family="Kalam">हिंद</text>
+  <text x="286" y="172" font-size="9" fill="#41505c" font-family="Kalam">महासागर</text>
+</svg>
+</div>
+<div class="capt" style="margin-top:-1mm">चित्र 1 : दक्षिण एशिया — क्षेत्रीय मानचित्र (हस्तचित्रण)</div>
+
+<!-- ध्वज पट्टी -->
+<div class="flagrow" style="margin:4mm 2mm 2mm">
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="13.4" fill="#f93"/><rect y="13.4" width="60" height="13.2" fill="#fff"/><rect y="26.6" width="60" height="13.4" fill="#128807"/><circle cx="30" cy="20" r="5" fill="none" stroke="#008" stroke-width="1.1"/><circle cx="30" cy="20" r="1" fill="#008"/></svg></div><div class="n">भारत</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#01411C"/><rect width="16" height="40" fill="#fff"/><circle cx="36" cy="20" r="8.5" fill="#fff"/><circle cx="39" cy="17" r="7.5" fill="#01411C"/><circle cx="36" cy="20" r="1.2" fill="#fff"/></svg></div><div class="n">पाकिस्तान</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#006a4e"/><circle cx="26" cy="20" r="9.5" fill="#f42a41"/></svg></div><div class="n">बांग्लादेश</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#dc143c"/><path d="M2 2 L34 2 L18 20 L34 38 L2 38 Z" fill="#003893" stroke="#fff" stroke-width="1"/><path d="M2 2 L24 2 L13 11.5 Z M2 38 L24 38 L13 28.5 Z" fill="#003893"/><circle cx="8" cy="11.5" r="1.6" fill="#fff"/><path d="M7 28.5 q1.8 -2.4 2.6 0 q-.9 1.4 -2.6 0 Z" fill="#fff"/></svg></div><div class="n">नेपाल</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#FFD520"/><path d="M14 6 q14 14 0 28 q14 -6 14 -14 q0 -8 -14 -14 Z" fill="#E76A21"/><path d="M14 6 q-12 2 -8 14 q4 12 8 14 q12 -2 8 -14 q-4 -12 -8 -14 Z" fill="#fff"/></svg></div><div class="n">भूटान</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#8D153A"/><rect x="6" y="4" width="48" height="32" fill="#FFB700" rx="2"/><rect x="10" y="8" width="40" height="24" fill="#8D153A"/><path d="M18 10 q14 10 0 20 q10 -5 10 -10 q0 -5 -10 -10 Z" fill="#FFB700"/><rect x="34" y="8" width="6" height="24" fill="#005346"/><path d="M40 20 h6 M43 15 l3 -1.4 M43 25 l3 1.4" stroke="#FFB700" stroke-width="2.4"/></svg></div><div class="n">श्रीलंका</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#D21034"/><rect x="6" y="6" width="48" height="28" fill="#007E3A"/><rect x="6" y="6" width="20" height="28" fill="#000"/><path d="M14 12 q7 4 0 9 q7 5 0 9 M14 12 v18" stroke="#fff" stroke-width="1.6" fill="none"/></svg></div><div class="n">मालदीव</div></div>
+  <div class="flag"><div class="f"><svg viewBox="0 0 60 40" preserveAspectRatio="none"><rect width="60" height="40" fill="#1a1a1a"/><g fill="#fff" opacity=".9"><path d="M0 26 L10 14 L20 30 L30 16 L40 32 L50 18 L60 30 V40 H0 Z"/></g><g fill="#c8102e"><circle cx="14" cy="10" r="1.4"/><circle cx="24" cy="6" r="1.4"/><circle cx="34" cy="9" r="1.4"/><circle cx="44" cy="5" r="1.4"/><circle cx="52" cy="9" r="1.4"/></g><text x="18" y="20" font-size="7" fill="#fff" font-family="Kalam">الله</text></svg></div><div class="n">अफ़ग़ानिस्तान</div></div>
+</div>
+
+<div class="stamp" style="top:9mm;right:12mm">2026–27</div>
+
+<div style="display:flex;gap:6mm;margin:5mm 6mm 0">
+  <div style="flex:1;border:1.8px solid #1a3c6e;border-radius:3.5mm;padding:3.5mm 5mm;background:#fff8e3">
+    <div style="font-family:'Yatra One','Noto Sans Devanagari',cursive;color:#b3001b;text-align:center;font-size:12.5pt;margin-bottom:2mm">प्रेषक</div>
+    <div style="font-size:11pt;line-height:2.05;color:#333">छात्र / छात्रा का नाम : <span class="blank" style="min-width:44mm"></span><br>कक्षा : <span style="display:inline-block;width:16mm;border-bottom:1.3px dotted #5a6874;text-align:center">12</span> &nbsp;&nbsp; अनुक्रमांक : <span class="blank" style="min-width:20mm"></span><br>विषय : <span style="display:inline-block;width:34mm;border-bottom:1.3px dotted #5a6874;text-align:center">राजनीति विज्ञान</span></div>
+  </div>
+  <div style="flex:1;border:1.8px solid #1a3c6e;border-radius:3.5mm;padding:3.5mm 5mm;background:#eef7ee">
+    <div style="font-family:'Yatra One','Noto Sans Devanagari',cursive;color:#2e7d32;text-align:center;font-size:12.5pt;margin-bottom:2mm">प्रति</div>
+    <div style="font-size:11pt;line-height:2.05;color:#333">विषय शिक्षक / शिक्षिका : <span class="blank" style="min-width:40mm"></span><br>विभाग : <span style="display:inline-block;width:38mm;border-bottom:1.3px dotted #5a6874;text-align:center">राजनीति विज्ञान</span><br>विद्यालय : <span style="display:inline-block;width:38mm;border-bottom:1.3px dotted #5a6874;text-align:center">__________</span></div>
+  </div>
+</div>
+
+<div style="text-align:center;margin-top:4mm;font-size:10.5pt;color:#7a6a45">परियोजना कार्य • प्रोजेक्ट फाइल • शैक्षणिक सत्र 2026–27</div>
+</div>
+
+<!-- ═══════════════ PAGE 2 : प्रमाण-पत्र ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+
+<div class="sec-t" style="margin-top:5mm">प्रमाण-पत्र</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#c9a227" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#b3001b"/><circle cx="86" cy="6" r="2" fill="#e67e22"/><circle cx="114" cy="6" r="2" fill="#e67e22"/></svg></div>
+
+<div class="drw"><svg viewBox="0 0 120 74" style="width:52mm;height:32mm">
+  <path d="M22 70 V40 L60 22 L98 40 V70" fill="#fff8e3" stroke="#1a3c6e" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M22 40 L60 22 L98 40 L60 58 Z" fill="#cfe6f7" stroke="#1a3c6e" stroke-width="2.4" stroke-linejoin="round"/>
+  <rect x="52" y="34" width="16" height="12" rx="2" fill="#1a3c6e"/>
+  <path d="M44 12 q16 -12 32 0" stroke="#c9a227" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <path d="M40 14 L44 12 L46 16 M80 14 L76 12 L74 16" stroke="#c9a227" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <circle cx="18" cy="18" r="3" fill="#e67e22"/><circle cx="104" cy="14" r="2.4" fill="#2e7d32"/><circle cx="112" cy="24" r="2" fill="#b3001b"/>
+  <path d="M46 62 h28 M50 66 h20" stroke="#b9c4d0" stroke-width="2" stroke-linecap="round"/>
+</svg></div>
+<div class="capt">— प्रमाणित प्रति —</div>
+
+<div style="font-family:'Tiro Devanagari Hindi','Noto Sans Devanagari',serif;font-size:12.8pt;line-height:2.05;color:#26343f;text-align:justify;margin:3mm 3mm 0">
+<p>यह प्रमाणित किया जाता है कि श्रीमान / श्रीमती <span class="blank" style="min-width:62mm"></span> ने कक्षा <b>12</b>, अनुक्रमांक <span class="blank" style="min-width:24mm"></span> में विद्यालय की ओर से <b style="color:#b3001b">राजनीति विज्ञान (भाग 2)</b> विषय के अध्याय <b>«समकालीन दक्षिण एशिया»</b> पर शोध, तथ्य-संकलन एवं चित्रांकन सहित यह परियोजना (प्रोजेक्ट फाइल) पूर्णतः स्वयं तैयार की है।</p>
+<p>यह परियोजना <b>C.B.S.E. के आंतरिक मूल्यांकन</b> हेतु निर्धारित पाठ्यक्रम एवं प्रारूप के अनुसार, मार्गदर्शक के निर्देशों में रहकर, शैक्षणिक सत्र <b>2026–27</b> में नियमित रूप से पूर्ण की गई है। इस परियोजना की सामग्री सत्य एवं पाठ्य-आधारित है और इसे <b>संतोषजनक</b> स्तर पर पूर्ण होने का प्रमाणन दिया जाता है।</p>
+</div>
+
+<div class="box y" style="margin-top:4mm"><span class="bt">परियोजना का विवरण</span>
+<table style="margin:1mm 0 0;font-size:10.5pt">
+<tr><td style="width:38%"><b>विषय</b></td><td>राजनीति विज्ञान — राजनीति विज्ञान भाग 2 (NCERT)</td></tr>
+<tr><td><b>अध्याय</b></td><td>अध्याय 5 — समकालीन दक्षिण एशिया</td></tr>
+<tr><td><b>प्रकार</b></td><td>परियोजना प्रतिवेदन (प्रोजेक्ट फाइल) — 17 पृष्ठ</td></tr>
+<tr><td><b>प्रस्तुति दिवस</b></td><td>तिथि : <span class="blank" style="min-width:30mm"></span></td></tr>
+</table></div>
+
+<div class="sig">
+  <div class="s"><div class="ln"></div>हस्ताक्षर — विषय शिक्षक<br><span style="font-size:8.6pt">(मूल्यांकन करता/करती है)</span></div>
+  <div class="s"><div class="ln"></div>हस्ताक्षर — प्रधानाचार्य<br><span style="font-size:8.6pt">(प्राचार्य / प्रधानाध्यापक)</span></div>
+  <div class="s"><div class="ln"></div>हस्ताक्षर — बाह्य परीक्षक<br><span style="font-size:8.6pt">(यदि उपस्थित हों)</span></div>
+</div>
+<div class="pgfoot">स्थान : <span class="blank" style="min-width:30mm"></span> &nbsp;&nbsp; तिथि : <span class="blank" style="min-width:30mm"></span> &nbsp;•&nbsp; पृष्ठ 2</div>
+</div>
+
+<!-- ═══════════════ PAGE 3 : आभार ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+
+<div class="sec-t" style="margin-top:5mm;color:#2e7d32">कृतज्ञता — आभार</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#2e7d32" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#2e7d32"/><circle cx="86" cy="6" r="2" fill="#e67e22"/><circle cx="114" cy="6" r="2" fill="#e67e22"/></svg></div>
+
+<div class="drw"><svg viewBox="0 0 150 80" style="width:62mm;height:33mm">
+  <g transform="rotate(-4 75 40)">
+    <path d="M18 50 q20 -26 44 -10 l14 8 q6 3 2 8 l-3 3 q-4 3 -9 0 l-12 -7" fill="#ffe0b2" stroke="#a35400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M132 50 q-20 -26 -44 -10 l-14 8 q-6 3 -2 8 l3 3 q4 3 9 0 l12 -7" fill="#ffe0b2" stroke="#a35400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M66 44 q9 -6 18 0 q-9 8 -18 0 Z" fill="#ffd9b3" stroke="#a35400" stroke-width="2"/>
+    <path d="M40 22 q4 -10 12 -4 M110 22 q-4 -10 -12 -4" stroke="#c9a227" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="75" cy="16" r="7" fill="#fff" stroke="#1a3c6e" stroke-width="2"/>
+    <path d="M70 16 h10 M75 11 v10" stroke="#1a3c6e" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+</svg></div>
+<div class="capt">सहयोग की भावना — हस्तचित्रण</div>
+
+<div class="body" style="margin:2mm 2mm 0;font-size:12pt">
+<p>इस परियोजना कार्य के पूर्ण होने का श्रेय मात्र अपने नहीं है; इसमें अनेक हाथों का सहयोग और मार्गदर्शन निहित है। इस अवसर पर मैं अपनी गहन कृतज्ञता प्रकट करता / करती हूँ —</p>
+<p>सर्वप्रथम मैं अपने <b class="hd">विषय शिक्षक</b> <span class="blank" style="min-width:52mm"></span> जी का आभारी हूँ, जिनके निरंतर मार्गदर्शन, उत्तेजक बहसों और सटीक सुझावों ने ही «समकालीन दक्षिण एशिया» अध्याय की इस जटिल विषय-वस्तु को इतनी सरल एवं सुंदर रूप में ढालने की दिशा दिखाई।</p>
+<p>मैं अपने <b class="hd">प्रधानाचार्य</b> <span class="blank" style="min-width:52mm"></span> जी का आभार व्यक्त करता हूँ, जिन्होंने विद्यालय की पुस्तकालय सुविधाओं तथा परियोजना कार्य की आवश्यक अनुमति देकर अनुकूल वातावरण उपलब्ध कराया।</p>
+<p>मेरा विशेष आभार अपने <b class="hd">माता-पिता</b> का है, जिनके निरंतर उत्साहवर्धन, धैर्य और साधनों के सहयोग के बिना यह कार्य संभव नहीं था। साथ ही <b class="hd">मित्रों एवं सहपाठियों</b> का धन्यवाद, जिनकी चर्चाओं और जानकारी साझा करने की प्रवृत्ति ने परियोजना को समृद्ध किया।</p>
+</div>
+
+<div class="box g"><span class="bt">परियोजना में मेरी सीख</span>
+<ul class="tick" style="margin-top:1mm">
+<li>दक्षिण एशिया केवल भौगोलिक इकाई नहीं, <b>साझा इतिहास और लोकतांत्रिक संघर्षों</b> का क्षेत्र है।</li>
+<li>प्रत्येक पड़ोसी देश का विकास भारत से <b>गहराई से जुड़ा</b> है — संघर्ष भी और सहयोग भी।</li>
+<li>लोकतंत्र केवल चुनाव नहीं; यह संस्थाओं, नागरिक अधिकारों और <b>सहिष्णुता</b> का निरंतर अभ्यास है।</li>
+</ul></div>
+
+<div class="sig">
+  <div class="s"><div class="ln"></div>नाम — <span style="font-size:10pt">__________</span><br><span style="font-size:8.6pt">कक्षा 12, अनुक्रमांक ____</span></div>
+  <div class="s" style="padding-top:6mm;font-family:'Tiro Devanagari Hindi','Noto Sans Devanagari',serif;font-size:13pt;color:#1a3c6e">सधन्यवाद सहित,</div>
+  <div class="s"><div class="ln"></div>विषय शिक्षक<br><span style="font-size:8.6pt">राजनीति विज्ञान विभाग</span></div>
+</div>
+<div class="pgfoot">— आभार — &nbsp;•&nbsp; पृष्ठ 3</div>
+</div>
+
+<!-- ═══════════════ PAGE 4 : विषय-सूची ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#b3001b"/><circle cx="10" cy="58" r="3.4" fill="#b3001b"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#b3001b"/><circle cx="10" cy="58" r="3.4" fill="#b3001b"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#b3001b"/><circle cx="10" cy="58" r="3.4" fill="#b3001b"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#b3001b"/><circle cx="10" cy="58" r="3.4" fill="#b3001b"/></svg></div>
+
+<div class="sec-t" style="margin-top:5mm">विषय-सूची (अनुक्रमणिका)</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#1a3c6e" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#1a3c6e"/></svg></div>
+
+<table style="font-size:11.5pt">
+<tr><th style="width:12%">क्रम</th><th>विषय / शीर्षक</th><th style="width:16%">चित्र</th><th style="width:16%">पृष्ठ</th></tr>
+<tr><td class="c">1</td><td><b>मुखपृष्ठ</b> — क्षेत्र मानचित्र, राष्ट्रीय ध्वज पट्टी</td><td class="c"><b style="color:#1a5f9e">✦</b></td><td class="c">1</td></tr>
+<tr><td class="c">2</td><td><b>प्रमाण-पत्र</b></td><td class="c"><b style="color:#a67c00">◆</b></td><td class="c">2</td></tr>
+<tr><td class="c">3</td><td><b>कृतज्ञता</b> (आभार)</td><td class="c"><b style="color:#2e7d32">◆</b></td><td class="c">3</td></tr>
+<tr><td class="c">4</td><td><b>विषय-सूची</b></td><td class="c"><b style="color:#1a3c6e">✦</b></td><td class="c">4</td></tr>
+<tr><td class="c">5</td><td><b>प्रस्तावना</b> — अध्ययन का उद्देश्य</td><td class="c"><b style="color:#1a5f9e">●</b></td><td class="c">5</td></tr>
+<tr><td class="c">6</td><td><b>दक्षिण एशिया : क्षेत्र, देश एवं विविधता</b></td><td class="c"><b style="color:#1a5f9e">✦</b></td><td class="c">6</td></tr>
+<tr><td class="c">7</td><td><b>दक्षिण एशिया में लोकतंत्र एवं राजनीतिक व्यवस्थाएँ</b></td><td class="c"><b style="color:#b3001b">■</b></td><td class="c">7</td></tr>
+<tr><td class="c">8</td><td><b>पाकिस्तान में सेना और लोकतंत्र</b></td><td class="c"><b style="color:#2e7d32">◆</b></td><td class="c">8</td></tr>
+<tr><td class="c">9</td><td><b>बांग्लादेश : एक स्वतंत्र राष्ट्र की गाथा</b></td><td class="c"><b style="color:#a35400">✦</b></td><td class="c">9</td></tr>
+<tr><td class="c">10</td><td><b>श्रीलंका का जातीय संघर्ष</b></td><td class="c"><b style="color:#155c33">◆</b></td><td class="c">10</td></tr>
+<tr><td class="c">11</td><td><b>नेपाल : लोकतंत्र के लिए संघर्ष</b></td><td class="c"><b style="color:#1a5f9e">▲</b></td><td class="c">11</td></tr>
+<tr><td class="c">12</td><td><b>भारत और पड़ोसी देश (भाग 1)</b> — पाकिस्तान, बांग्लादेश</td><td class="c"><b style="color:#2e7d32">◆</b></td><td class="c">12</td></tr>
+<tr><td class="c">13</td><td><b>भारत और पड़ोसी देश (भाग 2)</b> — श्रीलंका, नेपाल, भूटान, मालदीव, अफ़ग़ानिस्तान</td><td class="c"><b style="color:#2e7d32">◆</b></td><td class="c">13</td></tr>
+<tr><td class="c">14</td><td><b>दक्षिण एशिया में संघर्ष और सहयोग</b> — सार्क, दक्षेस</td><td class="c"><b style="color:#1a3c6e">●</b></td><td class="c">14</td></tr>
+<tr><td class="c">15</td><td><b>समग्र दृष्टि</b> — तुलनात्मक तालिका एवं महत्वपूर्ण तिथियाँ</td><td class="c"><b style="color:#a67c00">■</b></td><td class="c">15</td></tr>
+<tr><td class="c">16</td><td><b>निष्कर्ष</b></td><td class="c"><b style="color:#1a3c6e">●</b></td><td class="c">16</td></tr>
+<tr><td class="c">17</td><td><b>संदर्भ सूची</b> (Bibliography)</td><td class="c"><b style="color:#b3001b">✦</b></td><td class="c">17</td></tr>
+</table>
+
+<div class="box" style="margin-top:4.5mm"><span class="bt">परियोजना की विशेषताएँ</span>
+<div class="two" style="margin-top:1mm">
+<ul class="tick" style="flex:1;margin:0"><li>NCERT पाठ्य-आधारित तथ्य</li><li>हस्तचित्रण (ड्रॉइंग) एवं ध्वज-चित्रण</li><li>कालक्रम एवं तालिकाएँ</li></ul>
+<ul class="tick" style="flex:1;margin:0"><li>तुलनात्मक विश्लेषण</li><li>बहुआयामी भारतीय परिप्रेक्ष्य</li><li>स्पष्ट निष्कर्ष एवं संदर्भ</li></ul>
+</div></div>
+
+<div class="drw" style="margin-top:4mm"><svg viewBox="0 0 220 40" style="width:90mm;height:17mm">
+  <path d="M6 30 q22 -22 44 -2 q22 20 44 -2 q22 -20 44 2 q22 20 44 -2 q16 -12 28 -4" fill="none" stroke="#e67e22" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="10" cy="30" r="3" fill="#b3001b"/><circle cx="212" cy="26" r="3" fill="#b3001b"/>
+  <path d="M96 12 l6 8 M112 10 l-4 9" stroke="#c9a227" stroke-width="2.4" stroke-linecap="round"/>
+</svg></div>
+<div class="pgfoot">— विषय-सूची — &nbsp;•&nbsp; पृष्ठ 4</div>
+</div>
+
+<!-- ═══════════════ PAGE 5 : प्रस्तावना ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t">प्रस्तावना</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#c9a227" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#b3001b"/></svg></div>
+
+<div class="drw"><svg viewBox="0 0 130 82" style="width:54mm;height:34mm">
+  <circle cx="65" cy="41" r="30" fill="#dff0fb" stroke="#1a3c6e" stroke-width="2.6"/>
+  <path d="M35 41 h60 M65 11 c-14 18 -14 42 0 60 M65 11 c14 18 14 42 0 60" stroke="#5a86ad" stroke-width="1.8" fill="none"/>
+  <path d="M40 30 q12 -10 24 -2 q14 6 22 2 q-6 10 -20 8 q-16 -2 -26 -8 Z" fill="#2e7d32" opacity=".85"/>
+  <path d="M44 54 q16 8 34 0 q-4 8 -16 8 q-14 0 -18 -8 Z" fill="#2e7d32" opacity=".7"/>
+  <circle cx="20" cy="20" r="4" fill="#e67e22"/><circle cx="112" cy="16" r="3.4" fill="#b3001b"/><circle cx="114" cy="64" r="3.4" fill="#2e7d32"/>
+  <path d="M8 44 q6 -4 12 0 M116 42 q-6 -4 -12 0" stroke="#c9a227" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+</svg></div>
+<div class="capt">हमारा क्षेत्र — पृथ्वी पर दक्षिण एशिया (हस्तचित्रण)</div>
+
+<div class="body" style="margin-top:1.5mm">
+<p class="lead"><b class="hd">दक्षिण एशिया</b> विश्व का वह ऐतिहासिक क्षेत्र है जहाँ <span class="mrk">हिमालय की शृंखला और हिंद महासागर</span> के बीच बसे देशों को साझा इतिहास, साझा संस्कृति, साझा संघर्ष और अब <b class="pt">साझा भविष्य</b> का सूत्र जोड़ता है। NCERT के राजनीति विज्ञान भाग 2 का अध्याय 5 इसी क्षेत्र की समकालीन राजनीति — लोकतंत्र, तानाशाही, जातीय संघर्ष, राजतंत्र और क्षेत्रीय सहयोग — का विवेचन करता है।</p>
+<p>इस परियोजना में हमने दक्षिण एशिया के आठ देशों — <b>भारत, पाकिस्तान, बांग्लादेश, नेपाल, भूटान, श्रीलंका, मालदीव और अफ़ग़ानिस्तान</b> — की राजनीतिक यात्रा का अध्ययन किया है। कहीं सेना सत्ता में आती है (पाकिस्तान), कहीं भाषा और जाति राष्ट्र की सीमाएँ तय करती हैं (बांग्लादेश, श्रीलंका), तो कहीं राजा और जनता लोकतंत्र के लिए साथ चलते हैं (नेपाल, भूटान)। इन सबके बीच भारत की भूमिका — सहयोगी, पड़ोसी और बड़े भाई दोनों — इस क्षेत्र की सबसे महत्वपूर्ण तथ्य-रेखा है।</p>
+</div>
+
+<div class="box y"><span class="bt">परियोजना के उद्देश्य</span>
+<ul class="tick" style="margin-top:1mm">
+<li>दक्षिण एशिया के देशों की <b>राजनीतिक व्यवस्थाओं</b> का तुलनात्मक अध्ययन करना।</li>
+<li><b>लोकतंत्र की सफलता और चुनौतियों</b> को देश-वार उदाहरणों से समझना।</li>
+<li><b>भारत एवं पड़ोसी देशों</b> के संबंधों — संघर्ष और सहयोग — का मूल्यांकन।</li>
+<li><b>सार्क (SAARC)</b> जैसी क्षेत्रीय संस्थाओं की भूमिका जानना।</li>
+<li>चित्र, तालिका और कालक्रम के माध्यम से <b>विश्लेषणात्मक कौशल</b> विकसित करना।</li>
+</ul></div>
+
+<div class="quote">“ दक्षिण एशिया के देशों की एकता में विविधता है, और विविधता में एक साझा लोकतांत्रिक सपना — जिसे हमें समझना जरूरी है। ”</div>
+
+<div class="box g" style="margin-top:2mm"><span class="bt">अध्ययन-पद्धति</span>
+<div style="font-size:10.8pt;line-height:1.55;margin-top:1mm">पाठ्यपुस्तक (NCERT, राजनीति विज्ञान भाग 2, अध्याय 5) के केंद्रीकरण के साथ प्राथमिक-द्वितीयक स्रोतों — समाचार-पत्र, विदेश मंत्रालय की वेबसाइट, सार्क सचिवालय — से तथ्य संकलित कर <b>वर्णन, तालिका, कालक्रम और हस्तचित्रण</b> के माध्यम से प्रस्तुत किया गया है।</div></div>
+
+<div class="pgfoot"><b>5</b> &nbsp;•&nbsp; प्रस्तावना</div>
+</div>
+
+<!-- ═══════════════ PAGE 6 : क्षेत्र, देश एवं विविधता ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">दक्षिण एशिया : क्षेत्र, देश एवं विविधता</div>
+
+<div class="body">
+<p>दक्षिण एशिया अत्यंत <b class="hd">विशाल जनसंख्या</b> वाला क्षेत्र है — विश्व की लगभग <span class="pt">चौथाई जनसंख्या</span> यहीं निवास करती है, परन्तु क्षेत्रफल में यह विश्व के क्षेत्रफल का एक छोटा-सा भाग ही है। यहाँ बड़े-बड़े देशों (भारत, पाकिस्तान, बांग्लादेश) के साथ-साथ अत्यंत छोटे देश (भूटान, मालदीव) भी हैं — <b>क्षेत्रफल, जनसंख्या और संसाधनों</b> की दृष्टि से यह असमानता इस क्षेत्र की राजनीति को अत्यंत जटिल बनाती है।</p>
+</div>
+
+<table style="font-size:10pt">
+<tr><th>देश</th><th>राजधानी</th><th>विशेष पहचान</th><th>भाषा (प्रमुख)</th></tr>
+<tr><td><b>भारत</b></td><td class="c">नई दिल्ली</td><td>विश्व का सबसे बड़ा लोकतंत्र</td><td class="c">हिंदी व अनेक</td></tr>
+<tr><td><b>पाकिस्तान</b></td><td class="c">इस्लामाबाद</td><td>सैन्य प्रभुत्व का अनुभव</td><td class="c">उर्दू</td></tr>
+<tr><td><b>बांग्लादेश</b></td><td class="c">ढाका</td><td>भाषा-आधारित राष्ट्र निर्माण</td><td class="c">बंगाली</td></tr>
+<tr><td><b>नेपाल</b></td><td class="c">काठमांडू</td><td>राजतंत्र से गणतंत्र की ओर</td><td class="c">नेपाली</td></tr>
+<tr><td><b>भूटान</b></td><td class="c">थिम्पू</td><td>राजतंत्र से संवैधानिक लोकतंत्र</td><td class="c">जोंगखा</td></tr>
+<tr><td><b>श्रीलंका</b></td><td class="c">कोलंबो</td><td>जातीय संघर्ष की गाथा</td><td class="c">सिंहली, तमिल</td></tr>
+<tr><td><b>मालदीव</b></td><td class="c">माले</td><td>हजारों द्वीपों का देश</td><td class="c">दिवेही</td></tr>
+<tr><td><b>अफ़ग़ानिस्तान</b></td><td class="c">काबुल</td><td>गृहयुद्ध व तालिबान की समस्या</td><td class="c">पश्तो, दरी</td></tr>
+</table>
+<div class="capt">तालिका 1 : दक्षिण एशिया के देश — एक दृष्टि में</div>
+
+<div class="two">
+<div class="l">
+<div class="box g" style="margin-top:1mm"><span class="bt">क्षेत्र की भौगोलिक पहचान</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.3pt">
+<li><b>उत्तर</b> : हिमालय — विश्व की सबसे ऊँची पर्वत-माला (नेपाल-भूटान सहित)।</li>
+<li><b>दक्षिण</b> : हिंद महासागर — श्रीलंका और मालदीव के हजारों द्वीप।</li>
+<li><b>मध्य</b> : उपजाऊ गंगा-सिंधु मैदान — सघन जनसंख्या का क्षेत्र।</li>
+<li><b>पश्चिम</b> : पर्वतीय-शुष्क अफ़ग़ानिस्तान व बलूचिस्तान क्षेत्र।</li>
+</ul></div>
+</div>
+<div class="r">
+<div class="drw" style="margin:0"><svg viewBox="0 0 150 118" style="width:100%;max-width:66mm">
+  <path d="M14 96 L40 30 L58 42 L70 18 L92 40 L118 22 L136 88 Z" fill="#eef7ee" stroke="#2e7d32" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M40 30 L58 42 L70 18 L92 40 L118 22" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+  <path d="M52 34 l5 -7 l5 7 M96 36 l5 -8 l5 8" fill="none" stroke="#2e7d32" stroke-width="2" stroke-linecap="round"/>
+  <text x="30" y="110" font-size="11" fill="#2e7d32" font-family="Kalam" font-weight="bold">हिमालय</text>
+  <path d="M6 112 q20 -6 40 0 q20 6 40 0 q20 -6 40 0 q20 6 40 0" stroke="#1a5f9e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="34" y="124" font-size="10" fill="#1a5f9e" font-family="Kalam" font-weight="bold">हिंद महासागर</text>
+</svg>
+<div class="cap">चित्र 2 : उत्तर में पर्वत — दक्षिण में सागर</div></div>
+</div>
+</div>
+
+<div class="box y"><span class="bt">“विविधता में एकता” का क्षेत्र</span>
+<div style="font-size:10.8pt;line-height:1.55;margin-top:1mm">यहाँ <b>हिंदू, मुसलमान, बौद्ध, सिख, ईसाई</b> — सब प्रमुख धर्मों के अनुयायी हैं; हिंदी, उर्दू, बंगाली, सिंहली, नेपाली, धिवेही जैसी भाषाएँ बोली जाती हैं। समाजवादी, पूंजीवादी और मिश्रित अर्थव्यवस्थाएँ साथ-साथ चलती हैं। <b class="pt">फिर भी साझा इतिहास, साझा संस्कृति और साझा समस्याएँ</b> (गरीबी, जनसंख्या, विकास) इन सबको एक परिवार जैसा बाँधती हैं।</div></div>
+
+<div class="pgfoot"><b>6</b> &nbsp;•&nbsp; क्षेत्र, देश एवं विविधता</div>
+</div>
+
+<!-- ═══════════════ PAGE 7 : लोकतंत्र एवं राजनीतिक व्यवस्थाएँ ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:16.5pt">दक्षिण एशिया में लोकतंत्र एवं राजनीतिक व्यवस्थाएँ</div>
+
+<div class="two">
+<div class="l">
+<div class="body" style="font-size:10.9pt">
+<p>दक्षिण एशिया के देशों ने स्वतंत्रता के बाद अलग-अलग <b class="hd">राजनीतिक पथ</b> चुने। भारत ने सार्वभौमिक प्रौढ़ मताधिकार के साथ <b>संसदीय लोकतंत्र</b> चुना; पाकिस्तान में सैनिक शासन का अनुभव बार-बार दोहराया गया; नेपाल ने राजतंत्र से गणतंत्र की ओर संघर्ष किया; श्रीलंका लोकतंत्र है पर <b>जातीय संघर्ष</b> से जूझता रहा।</p>
+<p>इन सबमें एक समान बात — देशों में <span class="mrk">लोकतंत्र की लालसा</span> — रही है। लोकतंत्र केवल चुनाव नहीं; इसमें स्वतंत्र चुनाव आयोग, निष्पक्ष न्यायपालिका, खुली सूचना और नागरिक अधिकारों की संस्थाएँ भी शामिल हैं। यही कारण है कि क्षेत्र में <b>चुनाव आयोगों</b> को महत्व दिया जाता है और भारत का निर्वाचन आयोग अपनी स्वतंत्रता के लिए विश्व-प्रसिद्ध है।</p>
+</div>
+</div>
+<div class="r">
+<div class="drw" style="margin:0"><svg viewBox="0 0 140 118" style="width:100%;max-width:60mm">
+  <rect x="22" y="46" width="60" height="46" rx="6" fill="#fff8e3" stroke="#1a3c6e" stroke-width="2.6"/>
+  <rect x="34" y="30" width="36" height="16" rx="3" fill="#cfe6f7" stroke="#1a3c6e" stroke-width="2.2"/>
+  <path d="M30 46 q22 -12 44 0" stroke="#1a3c6e" stroke-width="2.2" fill="none"/>
+  <rect x="44" y="63" width="17" height="17" rx="2" fill="#fff" stroke="#1a3c6e" stroke-width="2.2"/>
+  <path d="M48 71 l3.2 3.2 l6 -7" stroke="#2e7d32" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 63 l-5 -4 M68 63 l5 -4" stroke="#c9a227" stroke-width="2" stroke-linecap="round"/>
+  <rect x="96" y="26" width="26" height="18" rx="2" fill="#2e7d32"/>
+  <circle cx="104" cy="35" r="2.4" fill="#fff"/><circle cx="114" cy="35" r="2.4" fill="#fff"/>
+  <rect x="96" y="52" width="26" height="18" rx="2" fill="#e67e22"/>
+  <path d="M102 61 l4 4 l9 -9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="78" width="26" height="18" rx="2" fill="#b3001b"/>
+  <path d="M103 87 h12 M109 81 v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M88 55 v-8" stroke="#8a6d1f" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="30" y="108" font-size="11" fill="#1a3c6e" font-family="Kalam" font-weight="bold">मतदान — लोकतंत्र का स्वर</text>
+</svg>
+<div class="cap">चित्र 3 : मतदान की डिब्बी और मतपत्र (हस्तचित्रण)</div></div>
+</div>
+</div>
+
+<table style="font-size:9.8pt">
+<tr><th>देश</th><th>वर्तमान व्यवस्था</th><th>राजनीतिक इतिहास (संक्षेप)</th></tr>
+<tr><td><b>भारत</b></td><td class="c">संसदीय लोकतंत्र<br>(गणराज्य)</td><td>1950 का संविधान; निरंतर निर्वाचन परंपरा</td></tr>
+<tr><td><b>पाकिस्तान</b></td><td class="c">संसदीय लोकतंत्र<br>(सैन्य छाया)</td><td>1958, 1969, 1977, 1999 — चार बार सैनिक शासन</td></tr>
+<tr><td><b>बांग्लादेश</b></td><td class="c">संसदीय लोकतंत्र</td><td>1971 से स्वतंत्र; 1990 से निरंतर लोकतांत्रिक चुनाव</td></tr>
+<tr><td><b>नेपाल</b></td><td class="c">गणतंत्र (2008 से)</td><td>राजतंत्र → 1990 लोकतंत्र → 2006 जनांदोलन → 2008 गणराज्य</td></tr>
+<tr><td><b>भूटान</b></td><td class="c">संवैधानिक लोकतंत्र</td><td>राजा की इच्छा से 2008 में चुनावी लोकतंत्र</td></tr>
+<tr><td><b>श्रीलंका</b></td><td class="c">लोकतंत्र (अध्यक्षीय प्रबल)</td><td>1948 से लोकतंत्र; जातीय तनाव निरंतर</td></tr>
+<tr><td><b>मालदीव</b></td><td class="c">राष्ट्रपति-प्रणाली</td><td>1968 गणराज्य; राजनीतिक अस्थिरता के प्रयास</td></tr>
+<tr><td><b>अफ़ग़ानिस्तान</b></td><td class="c">संकटग्रस्त व्यवस्था</td><td>गृहयुद्ध, तालिबान शासन — लोकतंत्र का संघर्ष</td></tr>
+</table>
+<div class="capt">तालिका 2 : दक्षिण एशिया — राजनीतिक व्यवस्थाओं की तुलना</div>
+
+<div class="box"><span class="bt">लोकतंत्र क्यों बार-बार लौटा?</span>
+<div style="font-size:10.6pt;line-height:1.5;margin-top:1mm">जब भी तानाशाही या सैन्य शासन आया, <b>जनता ने आंदोलन और चुनाव</b> के माध्यम से लोकतंत्र को बहाल किया — बांग्लादेश 1990, नेपाल 1990 और 2006, पाकिस्तान 1988। इसका कारण: <b class="pt">लोगों की आकांक्षाएँ</b> स्वतंत्रता, सम्मान, समानता और विकास की हैं — ये मूल्य लोकतंत्र में ही पूर्ण होते हैं।</div></div>
+
+<div class="pgfoot"><b>7</b> &nbsp;•&nbsp; लोकतंत्र एवं व्यवस्थाएँ</div>
+</div>
+
+<!-- ═══════════════ PAGE 8 : पाकिस्तान ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">पाकिस्तान में सेना और लोकतंत्र</div>
+
+<div class="two">
+<div class="l" style="flex:.92">
+<div class="drw" style="margin:0"><svg viewBox="0 0 140 112" style="width:100%;max-width:58mm">
+  <circle cx="70" cy="42" r="30" fill="#01411C" stroke="#2e7d32" stroke-width="2.4"/>
+  <circle cx="76" cy="34" r="13" fill="#fff"/>
+  <circle cx="80" cy="30" r="11.5" fill="#01411C"/>
+  <path d="M62 44 l3.4 0 l1 -3.2 l1 3.2 l3.4 0 l-2.7 2 l1 3.2 l-2.7 -2 l-2.7 2 l1 -3.2 Z" fill="#fff"/>
+  <g transform="translate(24,80)">
+    <rect x="0" y="0" width="92" height="30" rx="2.4" fill="#01411C" stroke="#2e7d32" stroke-width="1.8"/>
+    <rect x="0" y="0" width="23" height="30" rx="2.4" fill="#fff"/>
+    <circle cx="56" cy="15" r="11" fill="#fff"/>
+    <circle cx="61" cy="11" r="9.5" fill="#01411C"/>
+    <path d="M46 20 l2.4 0 l0.7 -2.2 l0.7 2.2 l2.4 0 l-1.9 1.4 l0.7 2.2 l-1.9 -1.4 l-1.9 1.4 l0.7 -2.2 Z" fill="#fff"/>
+  </g>
+</svg>
+<div class="cap">चित्र 4 : पाकिस्तान का ध्वज-चित्रण</div></div>
+</div>
+<div class="r" style="flex:1.08">
+<div class="body" style="font-size:10.8pt">
+<p><b class="hd">1947</b> में भारत विभाजन के साथ जन्मे पाकिस्तान की सबसे बड़ी विशेषता रही — <b class="pt">सेना का राजनीति पर गहरा प्रभाव</b>। अली जिन्ना के बाद राजनीतिक संस्थाएँ कमजोर रहीं, इसलिए अक्सर फौज ने चुने हुए नेताओं की जगह ली।</p>
+<p>चार बार सैनिक शासन लगा — <b>अयूब खान (1958)</b>, <b>याह्या खान (1969)</b>, <b>जिया-उल-हक (1977)</b> और <b>परवेज़ मुशर्रफ (1999)</b>। इन बीचोबीच <b>ज़ुल्फ़ीकार अली भुट्टो (1971–77)</b> ने लोकप्रिय नागरिक सरकार चलाई, तथा <b>बेनज़ीर भुट्टो</b> और <b>नवाज़ शरीफ</b> जैसे जननेता बार-बार लोकतंत्र लौटाने का प्रयास करते रहे।</p>
+</div>
+</div>
+</div>
+
+<div class="tl">
+  <div class="yr">1958</div><div class="tx">अयूब खान ने सत्ता हथियाई — <b>‘संचारी लोकतंत्र’</b> का प्रयोग <span>(1962 संविधान — अध्यक्षीय व्यवस्था)</span></div>
+  <div class="yr">1971</div><div class="tx">पूर्वी पाकिस्तान का विच्छेद — <b>बांग्लादेश</b> का जन्म <span>(भारत की सहायता से)</span></div>
+  <div class="yr">1977</div><div class="tx">जिया-उल-हक का सैन्य तख्तापलट; भुट्टो की हत्या <span>(1979)</span></div>
+  <div class="yr">1988</div><div class="tx">बेनज़ीर भुट्टो का चुनाव — लोकतंत्र की बहाली <span>(नवाज़ शरीफ के साथ बारी-बारी सत्ता)</span></div>
+  <div class="yr">1999</div><div class="tx">मुशर्रफ का तख्तापलट <span>(2007 में बेनज़ीर की हत्या; 2008 में मुशर्रफ का पतन)</span></div>
+</div>
+
+<div class="box y" style="margin-top:2mm"><span class="bt">प्रांतीय तनाव — एक विशेष समस्या</span>
+<div style="font-size:10.6pt;line-height:1.5;margin-top:1mm">पाकिस्तान की राजनीति में <b>पंजाब प्रांत</b> का प्रभुत्व रहा है — जनसंख्या, सेना और अर्थव्यवस्था में। बलूच, पठान और सिंधी प्रांतों में <b class="pt">असंतोष</b> रहा है कि संसाधनों का बँटवारा असमान है। यही असमानता 1971 में <b>पूर्वी पाकिस्तान के विच्छेद</b> का बड़ा कारण बनी थी।</div></div>
+
+<div class="box g"><span class="bt">सेना क्यों इतनी प्रभावशाली?</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.4pt">
+<li>भारत से <b>लंबा सीमा-विवाद</b> (कश्मीर) — सेना को ‘राष्ट्र का रक्षक’ माना जाता है।</li>
+<li>राजनीतिक दलों की <b>कमजोर संस्थागत परंपरा</b> और आपसी कलह।</li>
+<li>सेना का <b>अर्थव्यवस्था में भी व्यापक हस्तक्षेप</b>।</li>
+<li>सामाजिक रूढ़ियाँ — जो ‘मजबूत हाथ’ को स्वीकार्य बनाती हैं।</li>
+</ul></div>
+
+<div class="pgfoot"><b>8</b> &nbsp;•&nbsp; पाकिस्तान में सेना और लोकतंत्र</div>
+</div>
+
+<!-- ═══════════════ PAGE 9 : बांग्लादेश ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1e8e4e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#f42a41"/><circle cx="10" cy="58" r="3.4" fill="#f42a41"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1e8e4e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#f42a41"/><circle cx="10" cy="58" r="3.4" fill="#f42a41"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1e8e4e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#f42a41"/><circle cx="10" cy="58" r="3.4" fill="#f42a41"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1e8e4e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#f42a41"/><circle cx="10" cy="58" r="3.4" fill="#f42a41"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">बांग्लादेश : एक स्वतंत्र राष्ट्र की गाथा</div>
+
+<div class="two">
+<div class="l" style="flex:1.05">
+<div class="body" style="font-size:10.9pt">
+<p><b class="hd">1947</b> में बंगाल का मुस्लिम-बहुल भाग <b>पूर्वी पाकिस्तान</b> बना। परन्तु दूरी, भाषा और संस्कृति के अंतर ने जुड़ाव को तोड़ा। पश्चिमी पाकिस्तान के शासकों ने <span class="mrk">उर्दू को राष्ट्रभाषा बनाया</span>, जबकि बहुसंख्यक जनता की भाषा <b class="pt">बंगाली</b> थी। भाषा-आंदोलन (1952) ने बंगाली अस्मिता को जगाया।</p>
+<p><b class="hd">शेख मुजीबुर रहमान</b> ने <b>छह सूत्रीय</b> मांगों के साथ स्वायत्तता की लड़ाई लड़ी। 1970 के चुनावों में उनकी पार्टी ने बहुमत पाया, पर सत्ता सौंपी नहीं गई। <b>25 मार्च 1971</b> को पाकिस्तानी सेना ने क्रूर दमन किया; <b>मुक्ति बाहिनी</b> के साथ भारत ने सहयोग किया और <b class="pt">16 दिसम्बर 1971</b> को बांग्लादेश का जन्म हुआ।</p>
+</div>
+</div>
+<div class="r" style="flex:.95">
+<div class="drw" style="margin:0"><svg viewBox="0 0 140 112" style="width:100%;max-width:58mm">
+  <circle cx="64" cy="40" r="27" fill="#006a4e" stroke="#1e8e4e" stroke-width="2.4"/>
+  <circle cx="56" cy="40" r="14" fill="#f42a41"/>
+  <g transform="translate(8,74)">
+    <path d="M2 18 H124" stroke="#8a6d1f" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#2e7d32" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M20 18 V2 M20 10 L12 4 M20 10 L28 4"/>
+      <path d="M48 18 V4 M48 12 L41 6 M48 12 L55 6"/>
+      <path d="M76 18 V2 M76 10 L69 4 M76 10 L83 4"/>
+      <path d="M104 18 V4 M104 12 L97 6 M104 12 L111 6"/>
+    </g>
+    <g fill="#d4a017">
+      <ellipse cx="20" cy="1.5" rx="3.4" ry="5"/>
+      <ellipse cx="48" cy="3.5" rx="3.4" ry="5"/>
+      <ellipse cx="76" cy="1.5" rx="3.4" ry="5"/>
+      <ellipse cx="104" cy="3.5" rx="3.4" ry="5"/>
+    </g>
+    <text x="8" y="34" font-size="9.5" fill="#4a3a10" font-family="Kalam">धान के खेत — हरियाली का देश</text>
+  </g>
+</svg>
+<div class="cap">चित्र 5 : बांग्लादेश का ध्वज-चित्रण व धान के खेत</div></div>
+</div>
+</div>
+
+<div class="box"><span class="bt">1972 का संविधान — चार आधारभूत सिद्धांत</span>
+<div style="display:flex;gap:3mm;margin-top:1.5mm">
+<div style="flex:1;text-align:center;border:1.6px solid #1e8e4e;border-radius:2.5mm;background:#eef7ee;padding:2mm;font-size:10pt;color:#155c33"><b>राष्ट्रवाद</b><br><span style="font-size:8.6pt;color:#5a6874">एक भाषा, एक अस्मिता</span></div>
+<div style="flex:1;text-align:center;border:1.6px solid #1e8e4e;border-radius:2.5mm;background:#eef7ee;padding:2mm;font-size:10pt;color:#155c33"><b>समाजवाद</b><br><span style="font-size:8.6pt;color:#5a6874">शोषण-मुक्त समाज</span></div>
+<div style="flex:1;text-align:center;border:1.6px solid #1e8e4e;border-radius:2.5mm;background:#eef7ee;padding:2mm;font-size:10pt;color:#155c33"><b>धर्मनिरपेक्षता</b><br><span style="font-size:8.6pt;color:#5a6874">सभी धर्म समान</span></div>
+<div style="flex:1;text-align:center;border:1.6px solid #1e8e4e;border-radius:2.5mm;background:#eef7ee;padding:2mm;font-size:10pt;color:#155c33"><b>लोकतंत्र</b><br><span style="font-size:8.6pt;color:#5a6874">जनता की सत्ता</span></div>
+</div></div>
+
+<div class="body" style="font-size:10.6pt;margin-top:1mm">
+<p>स्वतंत्रता के बाद बांग्लादेश ने <b>एकदलीय व्यवस्था</b> (1975) भी देखी और <b>सैनिक शासन</b> भी; पर <b class="hd">1990 के जन-आंदोलन</b> के बाद निरंतर प्रतिस्पर्धी चुनाव हो रहे हैं। शेख मुजीब की पुत्री <b>शेख हसीना</b> (आवामी लीग) और <b>खालिदा जिया</b> (बीएनपी) के बीच दशकों तक प्रतिद्वंद्विता रही। बांग्लादेश की सबसे बड़ी चुनौतियाँ — <b>जनसंख्या घनत्व, प्रवासन, बाढ़ और नदी-जल बँटवारे</b> — हैं, जिनमें भारत का सहयोग महत्वपूर्ण है।</p>
+</div>
+
+<div class="box y"><span class="bt">भारत की भूमिका (1971)</span>
+<div style="font-size:10.5pt;line-height:1.5;margin-top:1mm">भारत ने करीब <b>एक करोड़ शरणार्थियों</b> को शरण दी, मुक्ति बाहिनी को प्रशिक्षण-सहायता दी और दिसम्बर 1971 के युद्ध में पाकिस्तानी सेना को पराजित किया — <b class="pt">यह क्षेत्रीय इतिहास का निर्णायक पल</b> था, जिसने दक्षिण एशिया का नक्शा बदल दिया।</div></div>
+
+<div class="tl" style="margin-top:2.5mm">
+  <div class="yr">1952</div><div class="tx">भाषा-आंदोलन — बंगाली अस्मिता का जागरण <span>(21 फरवरी — ‘भाषा शहीद दिवस’)</span></div>
+  <div class="yr">1971</div><div class="tx">महान मुक्ति युद्ध — स्वतंत्र बांग्लादेश का उदय</div>
+  <div class="yr">1975</div><div class="tx">एकदलीय व्यवस्था व परिवर्तन — लोकतंत्र का ठहराव</div>
+  <div class="yr">1990</div><div class="tx">जन-आंदोलन — प्रतिस्पर्धी लोकतंत्र की बहाली</div>
+</div>
+
+<div class="box g" style="margin-top:2mm"><span class="bt">क्या आप जानते हैं?</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.3pt">
+<li>बांग्लादेश का राष्ट्रगान <b>‘आमार शोनार बांग्ला’</b> — रवीन्द्रनाथ ठाकुर की रचना है।</li>
+<li>विश्व की सबसे बड़ी गैरसरकारी संस्था <b>ब्रैक (BRAC)</b> का जन्म यहीं हुआ।</li>
+<li><b>सूक्ष्म-ऋण</b> का विश्व-प्रसिद्ध प्रयोग ‘ग्रामीण बैंक’ — डॉ. मुहम्मद यूनुस।</li>
+</ul></div>
+
+<div class="pgfoot"><b>9</b> &nbsp;•&nbsp; बांग्लादेश : राष्ट्र की गाथा</div>
+</div>
+
+<!-- ═══════════════ PAGE 10 : श्रीलंका ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#8D153A" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#FFB700"/><circle cx="10" cy="58" r="3.4" fill="#FFB700"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#8D153A" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#FFB700"/><circle cx="10" cy="58" r="3.4" fill="#FFB700"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#8D153A" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#FFB700"/><circle cx="10" cy="58" r="3.4" fill="#FFB700"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#8D153A" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#FFB700"/><circle cx="10" cy="58" r="3.4" fill="#FFB700"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">श्रीलंका का जातीय संघर्ष</div>
+
+<div class="two">
+<div class="l" style="flex:.95">
+<div class="drw" style="margin:0"><svg viewBox="0 0 140 112" style="width:100%;max-width:58mm">
+  <rect x="18" y="14" width="104" height="62" rx="5" fill="#8D153A" stroke="#5e0e27" stroke-width="2.4"/>
+  <rect x="26" y="22" width="88" height="46" rx="3" fill="#FFB700"/>
+  <rect x="30" y="26" width="80" height="38" rx="2" fill="#8D153A"/>
+  <g fill="#FFB700">
+    <circle cx="52" cy="30" r="4.5"/><circle cx="61" cy="33" r="4.5"/><circle cx="65" cy="41" r="4.5"/>
+    <circle cx="63" cy="51" r="4.5"/><circle cx="55" cy="56" r="4.5"/><circle cx="46" cy="55" r="4.5"/>
+    <circle cx="40" cy="49" r="4.5"/><circle cx="39" cy="40" r="4.5"/><circle cx="43" cy="33" r="4.5"/>
+  </g>
+  <circle cx="52" cy="45" r="12" fill="#FFB700"/>
+  <circle cx="52" cy="45" r="11" fill="#E8A800"/>
+  <circle cx="52" cy="45" r="10.5" fill="#FFB700"/>
+  <circle cx="48" cy="43" r="2.2" fill="#8D153A"/>
+  <circle cx="56" cy="43" r="2.2" fill="#8D153A"/>
+  <path d="M46 50 q6 5 12 0 M52 45 v5" stroke="#8D153A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <rect x="88" y="26" width="7" height="38" fill="#005346"/>
+  <rect x="97" y="26" width="8" height="38" fill="#FFB700"/>
+  <rect x="88" y="26" width="17" height="38" fill="none" stroke="#8D153A" stroke-width="1"/>
+  <g transform="translate(28,80)">
+    <path d="M4 18 q14 -14 30 -6 q16 -10 32 0 q14 8 30 -2" fill="none" stroke="#2e7d32" stroke-width="2.6" stroke-linecap="round"/>
+    <g fill="#2e7d32">
+      <circle cx="16" cy="10" r="4.5"/><circle cx="46" cy="8" r="4.5"/><circle cx="82" cy="10" r="4.5"/>
+    </g>
+    <g stroke="#155c33" stroke-width="1.8" stroke-linecap="round">
+      <path d="M16 14 v5 M46 12 v6 M82 14 v5"/>
+    </g>
+    <text x="14" y="30" font-size="9" fill="#4a3a10" font-family="Kalam">चाय के बागान — पहाड़ों की शान</text>
+  </g>
+</svg>
+<div class="cap">चित्र 6 : श्रीलंका का ध्वज-चित्रण व चाय बागान</div></div>
+</div>
+<div class="r" style="flex:1.05">
+<div class="body" style="font-size:10.8pt">
+<p>श्रीलंका <b class="hd">1948</b> से स्वतंत्र लोकतंत्र है, पर यहाँ दो समुदायों की <span class="mrk">असमान संरचना</span> ने संघर्ष का बीज बोया — <b>सिंहली</b> (लगभग 74%, बौद्ध) और <b>तमिल</b> (लगभग 18%: श्रीलंकाई तमिल + उपनिवेश काल में लाए गए ‘भारतीय मूल के तमिल’)।</p>
+<p><b class="hd">1956</b> के <b>‘सिंहली-केवल’ कानून</b> ने सिंहली को एकमात्र आधिकारिक भाषा बनाया; साथ ही सिंहली बौद्ध समुदाय को विशेष प्राथमिकता मिली। तमिलों की नौकरियाँ और अधिकार प्रभावित हुए — <b class="pt">हिंसक जातीय संघर्ष</b> का जन्म हुआ। तमिल संगठनों का जवाब संघर्ष और अंततः <b>हथियारबंद संघर्ष</b> बना।</p>
+</div>
+</div>
+</div>
+
+<div class="box y"><span class="bt">LTTE और गृहयुद्ध</span>
+<div style="font-size:10.6pt;line-height:1.5;margin-top:1mm"><b>तमिल ईलम मुक्ति बाघ (LTTE)</b> ने उत्तर-पूर्व श्रीलंका में अलग ‘तमिल ईलम’ राज्य के लिए सशस्त्र संघर्ष छेड़ा। लगभग <b class="pt">तीन दशक के गृहयुद्ध</b> में हजारों नागरिक मारे गए। <b>2009</b> में श्रीलंकाई सेना ने LTTE को पराजित किया और उसके प्रमुख प्रभाकरण की मृत्यु हुई। बाद में शांति, पुनर्वास और <b>राजनीतिक समावेशन</b> की चर्चाएँ जारी रहीं।</div></div>
+
+<table style="font-size:9.8pt">
+<tr><th style="width:22%">समुदाय</th><th>भाषा-धर्म</th><th>स्थिति</th></tr>
+<tr><td><b>सिंहली</b></td><td class="c">सिंहली / बौद्ध</td><td>बहुसंख्यक — राज्य-निर्माण में प्रमुख भूमिका</td></tr>
+<tr><td><b>श्रीलंकाई तमिल</b></td><td class="c">तमिल / हिंदू (कुछ ईसाई)</td><td>उत्तर-पूर्व के निवासी — असमानता का अनुभव</td></tr>
+<tr><td><b>भारतीय मूल के तमिल</b></td><td class="c">तमिल / हिंदू</td><td>चाय-बागानों में लाए गए — नागरिकता का संघर्ष</td></tr>
+</table>
+<div class="capt">तालिका 3 : श्रीलंका के जातीय समुदाय</div>
+
+<div class="box"><span class="bt">भारत की भूमिका</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.4pt">
+<li>भारत ने शुरुआत में <b>दूत भेजकर</b> समझौते के प्रयास किए (1987 भारत-श्रीलंका समझौता)।</li>
+<li><b>IPKF (भारतीय शांति सेना)</b> 1987–90 तक तैनात रही — अनुभव मिश्रित रहा।</li>
+<li>1991 में <b>राजीव गांधी</b> की हत्या LTTE से जुड़ी घटना थी — भारतीय जनमत को चोट पहुँची।</li>
+<li>बाद में भारत ने <b>राजनीतिक समाधान, विकास एवं मत्स्य-संबंधों</b> की राह अपनाई।</li>
+</ul></div>
+
+<div class="pgfoot"><b>10</b> &nbsp;•&nbsp; श्रीलंका का जातीय संघर्ष</div>
+</div>
+
+<!-- ═══════════════ PAGE 11 : नेपाल ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a5f9e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#dc143c"/><circle cx="10" cy="58" r="3.4" fill="#dc143c"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a5f9e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#dc143c"/><circle cx="10" cy="58" r="3.4" fill="#dc143c"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a5f9e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#dc143c"/><circle cx="10" cy="58" r="3.4" fill="#dc143c"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a5f9e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#dc143c"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">नेपाल : लोकतंत्र के लिए संघर्ष</div>
+
+<div class="two">
+<div class="l" style="flex:1.08">
+<div class="body" style="font-size:10.8pt">
+<p>नेपाल <b class="hd">1951</b> तक लगभग पूर्ण <b>राजतंत्र</b> था। राजा ने <b>1959</b> में संविधान सभा का गठन स्वीकार किया, परन्तु तुरंत बाद उसे भंग कर <span class="mrk">‘पंचायत व्यवस्था’</span> लागू की — राजा के अधीन सीमित, निर्दलीय राजनीति। <b>नेपाली कांग्रेस</b> और <b>गोरखा लीग</b> जैसे दल लोकतंत्र के लिए संघर्षरत रहे।</p>
+<p><b class="hd">1990</b> के जन-आंदोलन ने बहुदलीय <b>संवैधानिक राजतंत्र</b> बहाल किया। इसी दौर में <b>माओवादी विद्रोह</b> (1996) ने देश को गृहयुद्ध में धकेला। <b>2001</b> के <b class="pt">शाही हत्याकांड</b> के बाद राजा <b>ज्ञानेंद्र</b> सत्ता में आए; <b>2005</b> में उन्होंने संसद भंग कर पूर्ण शक्ति ले ली।</p>
+</div>
+</div>
+<div class="r" style="flex:.92">
+<div class="drw" style="margin:0"><svg viewBox="0 0 140 116" style="width:100%;max-width:56mm">
+  <path d="M8 92 L46 34 L66 60 L88 20 L132 92 Z" fill="#eef7ee" stroke="#1a5f9e" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M46 34 L66 60 L88 20" fill="#fff" opacity=".85" stroke="#fff" stroke-width="2"/>
+  <path d="M78 26 l8 6 l4 8" fill="none" stroke="#dc143c" stroke-width="2.6" stroke-linecap="round"/>
+  <g transform="translate(44,74)"><path d="M0 18 L14 0 L28 18 Z" fill="#dc143c"/><path d="M4 18 L14 6 L24 18 Z" fill="#8a0f2e"/></g>
+  <g transform="translate(76,78)"><path d="M0 14 L12 0 L24 14 Z" fill="#dc143c"/><path d="M3 14 L12 4 L21 14 Z" fill="#8a0f2e"/></g>
+  <text x="34" y="110" font-size="10" fill="#1a5f9e" font-family="Kalam" font-weight="bold">हिमालय और मंदिर — नेपाल</text>
+</svg>
+<div class="cap">चित्र 7 : नेपाल की पहाड़ी-मंदिर आकृति</div></div>
+</div>
+</div>
+
+<div class="tl">
+  <div class="yr">1951</div><div class="tx">राजा त्रिभुवन व राणा-शासन का अंत — संक्रमण की शुरुआत</div>
+  <div class="yr">1960</div><div class="tx">राजा महेंद्र ने संसदीय प्रयोग समाप्त कर <b>पंचायत व्यवस्था</b> लागू की</div>
+  <div class="yr">1990</div><div class="tx">जन-आंदोलन से <b>बहुदलीय लोकतंत्र</b> की बहाली</div>
+  <div class="yr">2005</div><div class="tx">राजा ज्ञानेंद्र ने संसद भंग की — जनता नाराज़</div>
+  <div class="yr">2006</div><div class="tx"><b>जनांदोलन-4</b> : सात-दलीय गठबंधन + माओवादी — लोकतंत्र की जीत</div>
+  <div class="yr">2008</div><div class="tx">राजशाही समाप्त — <b>गणतंत्र नेपाल</b> की घोषणा</div>
+</div>
+
+<div class="box g" style="margin-top:2mm"><span class="bt">2006 का जनांदोलन — सबसे बड़ा सबक</span>
+<div style="font-size:10.6pt;line-height:1.5;margin-top:1mm">प्रजातंत्र समर्थक <b>सात दलों का गठबंधन</b> और माओवादियों ने एक हुए; नागरिक समाज, शिक्षक, विद्यार्थी, श्रमिक — सब गली-गली उतरे। भारत सहित अंतरराष्ट्रीय दबाव भी रहा। परिणाम: राजा की शक्तियाँ लौट आईं, <b>शांति समझौता</b> हुआ और <b class="pt">संविधान सभा</b> के चुनाव के साथ देश गणतंत्र बना। यह सिद्ध करता है — <b>लोकतंत्र जनता की इच्छा से बनता है</b>।</div></div>
+
+<div class="two" style="margin-top:2.5mm">
+<div class="l">
+<div class="box" style="margin:0"><span class="bt">माओवादी विद्रोह क्या था?</span>
+<div style="font-size:10.2pt;line-height:1.45;margin-top:1mm">1996 से माओवादियों ने राजा व संसदीय दलों दोनों के विरुद्ध <b>सशस्त्र संघर्ष</b> छेड़ा; ग्रामीण क्षेत्रों में गरीबी-भेदभाव के खिलाफ उन्हें समर्थन मिला। बाद में वे <b>शांति-प्रक्रिया</b> से मुख्यधारा की राजनीति में आए।</div></div>
+</div>
+<div class="r">
+<div class="box y" style="margin:0"><span class="bt">भारत का सहयोग</span>
+<div style="font-size:10.2pt;line-height:1.45;margin-top:1mm">2015 के <b>भूकंप</b> में तत्काल राहत; व्यापार व ऊर्जा साझेदारी; शांति-प्रक्रिया में सहयोग। साथ ही <b>1950 की संधि</b> की समीक्षा के चर्चा-प्रश्न भी जारी रहे।</div></div>
+</div>
+</div>
+
+<div class="pgfoot"><b>11</b> &nbsp;•&nbsp; नेपाल : लोकतंत्र का संघर्ष</div>
+</div>
+
+<!-- ═══════════════ PAGE 12 : भारत-पड़ोसी (भाग 1) ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:16.5pt">भारत और पड़ोसी देश — भाग 1</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#c9a227" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#b3001b"/></svg></div>
+
+<div class="box"><span class="bt">भारत–पाकिस्तान : विभाजन की विरासत</span>
+<div class="two" style="margin-top:1.5mm">
+<div class="l">
+<div style="font-size:10.5pt;line-height:1.5">1947 के <b>विभाजन</b> से ही दो देशों का संबंध <b class="pt">कश्मीर प्रश्न</b> पर अटक गया। तीन पूर्ण युद्ध (1947–48, 1965, 1971) और <b>1999 कारगिल</b> के बाद भी सीमा पर तनाव रहा। <b>सिमला समझौता (1972)</b> और <b>लाहौर घोषणा (1999)</b> जैसे प्रयासों के बावजूद <b class="hd">सीमा-पार आतंकवाद</b> विश्वास की बड़ी बाधा बना हुआ है।</div>
+</div>
+<div class="r" style="flex:.7">
+<div class="drw" style="margin:0"><svg viewBox="0 0 110 84" style="width:100%;max-width:44mm">
+  <path d="M10 60 L34 24 L58 50 L82 18 L102 60 Z" fill="#eef7ee" stroke="#8a6d1f" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M10 60 H102" stroke="#8a6d1f" stroke-width="2.2"/>
+  <path d="M18 60 q18 -14 38 0 q18 12 38 0" fill="none" stroke="#1a5f9e" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="24" y="76" font-size="9" fill="#41505c" font-family="Kalam">सियाचिन व कश्मीर की हिम-सीमाएँ</text>
+</svg></div>
+</div>
+</div></div>
+
+<div class="tl" style="margin-top:1mm">
+  <div class="yr">1947-48</div><div class="tx">प्रथम युद्ध — कश्मीर का प्रश्न विवादित; सीज़फायर रेखा</div>
+  <div class="yr">1965</div><div class="tx">द्वितीय युद्ध — ताशकंद समझौता (1966)</div>
+  <div class="yr">1971</div><div class="tx">तृतीय युद्ध — बांग्लादेश निर्माण; <b>सिमला समझौता 1972</b></div>
+  <div class="yr">1998</div><div class="tx">पाकिस्तान के परमाणु परीक्षण — क्षेत्र में नया समीकरण</div>
+  <div class="yr">1999</div><div class="tx"><b>कारगिल युद्ध</b> — ऊँचाइयों पर पराक्रम; विश्वसनीयता का प्रश्न</div>
+</div>
+
+<div class="box y" style="margin-top:1.5mm"><span class="bt">भारत–बांग्लादेश : साझेदारी की कसौटी</span>
+<div class="two" style="margin-top:1.5mm">
+<div class="l">
+<ul class="tick" style="font-size:10.3pt;margin:0">
+<li>1971 में भारत ने स्वतंत्रता-संग्राम में <b>निर्णायक सहयोग</b> दिया।</li>
+<li><b>गंगा जल संधि (1996)</b> — फरक्का विवाद का राजनीतिक समाधान।</li>
+<li>सीमा-समझौता (2015) से <b>चकरवाती क्षेत्रों</b> का विनिमय — नागरिकता की समस्या हल।</li>
+<li>चुनौतियाँ : <b>अवैध प्रवासन, तीस्ता जल बँटवारा, नदी-पर्वत व पर्यावरण मुद्दे</b>।</li>
+</ul>
+</div>
+<div class="r" style="flex:.62">
+<div class="drw" style="margin:0"><svg viewBox="0 0 100 84" style="width:100%;max-width:40mm">
+  <path d="M8 44 q20 -10 42 0 q22 10 42 -2" stroke="#1a5f9e" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M20 34 q10 -12 24 -4 M56 30 q10 -10 22 -2" stroke="#8fc3e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="20" cy="64" r="5" fill="#f93"/><rect x="26" y="59" width="24" height="10" rx="1.6" fill="#fff"/><rect x="26" y="69" width="24" height="10" rx="1.6" fill="#128807"/>
+  <circle cx="38" cy="64" r="2.6" fill="none" stroke="#000080" stroke-width="1"/>
+  <circle cx="78" cy="64" r="5" fill="#006a4e"/><circle cx="74" cy="64" r="2.6" fill="#f42a41"/>
+  <text x="10" y="79" font-size="7.8" fill="#41505c" font-family="Kalam">साझा नदियाँ — साझा ज़िम्मेदारी</text>
+</svg></div>
+</div>
+</div></div>
+
+<div class="quote" style="font-size:11.5pt">“ पड़ोसी बदले नहीं जा सकते — इसलिए भारत की नीति है : संघर्ष को संवाद, और संवाद को सहयोग में बदलना। ”</div>
+
+<div class="box g" style="margin-top:2.5mm"><span class="bt">क्या आप जानते हैं?</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.3pt">
+<li><b>सिमला समझौता (1972)</b> के बाद भारत ने 90,000+ पाकिस्तानी युद्धबंदियों को बिना शर्त लौटाया — शांति की ओर बड़ा कदम।</li>
+<li><b>गंगा जल संधि (1996)</b> दोनों देशों के बीच नदी-जल का सबसे बड़ा राजनीतिक समझौता मानी जाती है।</li>
+<li>क्रिकेट मैच भी ‘मिनी वर्ल्ड कप’ जैसे तनाव और दोस्ती — दोनों का मिश्रण बन जाते हैं!</li>
+</ul></div>
+
+<div class="pgfoot"><b>12</b> &nbsp;•&nbsp; भारत और पड़ोसी देश (1)</div>
+</div>
+
+<!-- ═══════════════ PAGE 13 : भारत-पड़ोसी (भाग 2) ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#e67e22" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:16.5pt">भारत और पड़ोसी देश — भाग 2</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#c9a227" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#b3001b"/></svg></div>
+
+<table style="font-size:10pt">
+<tr><th style="width:20%">देश</th><th>सहयोग के पहलू</th><th>संघर्ष / मुद्दे</th></tr>
+<tr><td><b>श्रीलंका</b></td><td>व्यापार, संस्कृति; 1987 समझौता; IPKF शांति सेना</td><td>तमिल प्रश्न, मत्स्य-क्षेत्र विवाद, राजीव गांधी हत्या (1991)</td></tr>
+<tr><td><b>नेपाल</b></td><td><b>1950 शांति और मैत्री संधि</b>; खुली सीमा; रोटी-बेटी-पानी का रिश्ता; व्यापार व ऊर्जा</td><td>1989 की सीमा-रोक का विवाद; संधि की पुनर्विचार मांग</td></tr>
+<tr><td><b>भूटान</b></td><td><b>निकटतम मित्र</b>; आर्थिक-सैनिक सहायता; 2007 संधि; जल-विद्युत साझेदारी</td><td>व्यावहारिक रूप से नगण्य — आदर्श पड़ोसी रिश्ता</td></tr>
+<tr><td><b>मालदीव</b></td><td>1988 में <b>ऑपरेशन कैक्टस</b> (तख्तापलट विरोधी सहायता); व्यापार, पर्यटन, सुरक्षा</td><td>समय-समय पर राजनीतिक अस्थिरता की चिंता</td></tr>
+<tr><td><b>अफ़ग़ानिस्तान</b></td><td>विकास-सहयोग (सालमा बांध, संसद भवन); शिक्षा-स्वास्थ्य</td><td>तालिबान शासन एवं क्षेत्रीय अस्थिरता की चिंता</td></tr>
+</table>
+<div class="capt">तालिका 4 : भारत और पड़ोसी देश — सहयोग व मुद्दे</div>
+
+<div class="two">
+<div class="l" style="flex:.95">
+<div class="box g" style="margin:0"><span class="bt">“रोटी-बेटी-पानी” : भारत-नेपाल संबंध</span>
+<div style="font-size:10.4pt;line-height:1.5;margin-top:1mm">खुली सीमा के कारण परिवारों का आपसी <b>विवाह, रोजगार और तीर्थ-संबंध</b> सदियों पुराना है। नेपाली नागरिक भारत में समकक्ष अधिकार तक रखते हैं (संधि-प्रावधान)। 2015 के <b>भूकंप</b> में भारत की त्वरित सहायता और हमेशा की व्यापारिक भागीदारी इस रिश्ते की गहराई दिखाती है।</div></div>
+</div>
+<div class="r" style="flex:1.05">
+<div class="drw" style="margin:0"><svg viewBox="0 0 150 96" style="width:100%;max-width:62mm">
+  <path d="M6 26 q18 -16 36 0 q18 16 36 0 q18 -16 36 0 q16 12 30 0" stroke="#2e7d32" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <circle cx="22" cy="60" r="7" fill="#f93"/><rect x="30" y="53" width="30" height="14" rx="2" fill="#fff"/><rect x="30" y="67" width="30" height="14" rx="2" fill="#128807"/>
+  <circle cx="45" cy="60" r="3" fill="none" stroke="#000080" stroke-width="1.2"/>
+  <circle cx="112" cy="60" r="7" fill="#FFD520"/><path d="M104 60 q9 8 17 0" stroke="#E76A21" stroke-width="2.6" fill="none"/>
+  <path d="M56 60 h36" stroke="#c9a227" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="30" y="90" font-size="9.5" fill="#41505c" font-family="Kalam">भारत-भूटान : सदियों की मित्रता</text>
+</svg>
+<div class="cap">चित्र 8 : भारत-भूटान मित्रता — ध्वज हस्तचित्रण</div></div>
+</div>
+</div>
+
+<div class="box y"><span class="bt">भारत की ‘पड़ोसी प्राथमिकता’ नीति</span>
+<div style="font-size:10.5pt;line-height:1.5;margin-top:1mm">भारत की प्राथमिकता है — <b>क्षेत्र में शांति, व्यापार, निवेश और लोगों-का-जुड़ाव</b>। ‘पड़ोसी पहले’ (Neighbourhood First) नीति के अंतर्गत सम्मानजनक समानता, सहयोग और <b class="pt">समृद्ध पड़ोस = सुरक्षित भारत</b> का सिद्धांत अपनाया गया है।</div></div>
+
+<div class="box" style="margin-top:2.5mm"><span class="bt">संपर्क-परियोजनाएँ (Connectivity)</span>
+<div class="two" style="margin-top:1mm">
+<ul class="tick" style="flex:1;margin:0;font-size:10.2pt">
+<li><b>कलादान परियोजना</b> — म्यांमार-मोरमगाँव (भारत) मल्टीमोडल मार्ग।</li>
+<li><b>मोतिहारी–अमलेखगंज</b> पाइपलाइन — नेपाल तक ईंधन की सीधी आपूर्ति।</li>
+</ul>
+<ul class="tick" style="flex:1;margin:0;font-size:10.2pt">
+<li><b>सालमा बांध</b> (अफ़ग़ानिस्तान) — भारतीय विकास-सहायता का प्रतीक।</li>
+<li><b>जल-विद्युत साझेदारी</b> — भूटान व नेपाल की बड़ी परियोजनाएँ।</li>
+</ul>
+</div></div>
+
+<div class="pgfoot"><b>13</b> &nbsp;•&nbsp; भारत और पड़ोसी देश (2)</div>
+</div>
+
+<!-- ═══════════════ PAGE 14 : संघर्ष और सहयोग — सार्क ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#e67e22"/><circle cx="10" cy="58" r="3.4" fill="#e67e22"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:16.5pt">दक्षिण एशिया में संघर्ष और सहयोग — सार्क एवं दक्षेस</div>
+
+<div class="two">
+<div class="l" style="flex:.8">
+<div class="drw" style="margin:0"><svg viewBox="0 0 130 104" style="width:100%;max-width:52mm">
+  <circle cx="62" cy="46" r="30" fill="#fff8e3" stroke="#1a3c6e" stroke-width="2.6"/>
+  <g stroke="#e67e22" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <path d="M62 16 v-8 M62 84 v-8 M32 46 h-8 M100 46 h-8 M41 25 l-6 -6 M89 25 l6 -6 M41 67 l-6 6 M89 67 l6 6"/>
+  </g>
+  <path d="M50 34 q12 12 24 0 q-4 14 -12 14 q-8 0 -12 -14 Z" fill="#2e7d32"/>
+  <path d="M54 52 q8 8 16 0 q-4 8 -8 8 q-4 0 -8 -8 Z" fill="#2e7d32" opacity=".8"/>
+  <text x="34" y="100" font-size="10" fill="#1a3c6e" font-family="Kalam" font-weight="bold">सार्क — सात फूल, एक पुष्प</text>
+</svg>
+<div class="cap">चित्र 9 : सार्क की प्रतीक-आकृति (हस्तचित्रण)</div></div>
+</div>
+<div class="r" style="flex:1.2">
+<div class="body" style="font-size:10.7pt">
+<p>दक्षिण एशिया में असमानताओं के बीच <b class="hd">क्षेत्रीय सहयोग</b> की आवश्यकता दशकों से महसूस होती रही है। इसी आवश्यकता की परिणति है — <b class="pt">दक्षिण एशियाई क्षेत्रीय सहयोग संगठन (सार्क / SAARC)</b>, जिसकी स्थापना <b>8 दिसम्बर 1985</b> को ढाका में हुई।</p>
+<p><b>सात संस्थापक सदस्य</b> — भारत, पाकिस्तान, बांग्लादेश, नेपाल, भूटान, श्रीलंका, मालदीव — बाद में <b>2007 में अफ़ग़ानिस्तान</b> शामिल हुआ (अब आठ सदस्य)। सचिवालय <b>काठमांडू</b> (नेपाल) में है। सार्क की दृष्टि — <b>समृद्ध, शांतिपूर्ण दक्षिण एशिया</b> का निर्माण।</p>
+</div>
+</div>
+</div>
+
+<div class="box"><span class="bt">सार्क का चार्टर — मुख्य सिद्धांत</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.4pt">
+<li><b>संप्रभु समानता</b>, क्षेत्रीय अखंडता एवं राष्ट्रीय संप्रभुता का पूर्ण सम्मान।</li>
+<li><b>आंतरिक मामलों में हस्तक्षेप न करना</b> — क्षेत्रीय सहयोग द्विपक्षीय विवादों का स्थल नहीं।</li>
+<li>निर्णय <b>सर्वसम्मति</b> से; द्विपक्षीय एवं विवादित प्रश्न चर्चा से <b>बाहर</b> रखे जाते हैं।</li>
+<li>सहयोग के क्षेत्र : कृषि, स्वास्थ्य, शिक्षा, व्यापार, जलवायु, संस्कृति, सुरक्षा-संबंधी संकट।</li>
+</ul></div>
+
+<div class="two">
+<div class="l">
+<div class="box y" style="margin:0"><span class="bt">सार्क की उपलब्धियाँ</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.3pt">
+<li><b>सप्ता (SAPTA)</b> व <b>समा (SAFTA)</b> — मुक्त व्यापार क्षेत्र की दिशा।</li>
+<li><b>दक्षिण एशियाई विश्वविद्यालय</b> (नई दिल्ली) — शैक्षिक जुड़ाव।</li>
+<li>आपदा-प्रबंधन, रोग-नियंत्रण, सांस्कृतिक आदान-प्रदान।</li>
+</ul></div>
+</div>
+<div class="r">
+<div class="box g" style="margin:0"><span class="bt">सार्क की सीमाएँ</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.3pt">
+<li><b>भारत-पाकिस्तान तनाव</b> — शिखर सम्मेलन अक्सर टलते रहे।</li>
+<li>द्विपक्षीय मुद्दे चर्चा-से-बाहर — समाधान का रास्ता सीमित।</li>
+<li>व्यापार का बड़ा हिस्सा अब भी <b>क्षेत्र के बाहर</b> जाता है।</li>
+</ul></div>
+</div>
+</div>
+
+<div class="box" style="margin-top:3mm"><span class="bt">दक्षेस (BIMSTEC) — नया द्वार</span>
+<div style="font-size:10.5pt;line-height:1.5;margin-top:1mm"><b>बे ऑफ बंगाल इनिशिएटिव फॉर मल्टी-सेक्टोरल टेक्निकल एंड इकोनॉमिक को-ऑपरेशन</b> — यानी <b class="pt">दक्षेस</b> — में दक्षिण एशिया (भारत, बांग्लादेश, नेपाल, भूटान, श्रीलंका, मालदीव) के साथ दक्षिण-पूर्वी एशिया (म्यांमार, थाईलैंड) शामिल हैं। जब सार्क की गति धीमी पड़ती है, <b>दक्षेस ऊर्जा, व्यापार, सुरक्षा व संपर्क</b> के नए रास्ते खोलता है।</div></div>
+
+<div class="box y" style="margin-top:2.5mm"><span class="bt">क्या आप जानते हैं?</span>
+<ul class="tick" style="margin-top:.8mm;font-size:10.3pt">
+<li>सार्क का <b>महासचिव</b> सदस्य देशों में वर्णमाला-क्रम से बारी-बारी से चुना जाता है — साझा नेतृत्व की परंपरा।</li>
+<li>सार्क ध्वज — नीले वृत्त में <b>दो हाथों में नौ कलियाँ</b> : आठ सदस्य देश + बढ़ती हुई समृद्धि।</li>
+<li><b>दक्षिण एशियाई खेल (SAF Games)</b> एवं साहित्य-सम्मान — जनता का जुड़ाव।</li>
+</ul></div>
+
+<div class="pgfoot"><b>14</b> &nbsp;•&nbsp; संघर्ष और सहयोग</div>
+</div>
+
+<!-- ═══════════════ PAGE 15 : समग्र दृष्टि ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#1a3c6e" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:16.5pt">समग्र दृष्टि : तुलनात्मक तालिका एवं महत्वपूर्ण तिथियाँ</div>
+
+<table style="font-size:9.4pt">
+<tr><th>देश</th><th>मुख्य राजनीतिक संघर्ष</th><th>लोकतंत्र की स्थिति</th><th>भारत के साथ रिश्ता</th></tr>
+<tr><td><b>भारत</b></td><td>बहुतायती विविधता का प्रबंधन</td><td class="c">निरंतर सबसे स्थिर</td><td class="c">— (केंद्र)</td></tr>
+<tr><td><b>पाकिस्तान</b></td><td>सेना बनाम नागरिक सरकार</td><td class="c">बार-बार टूटी-जुड़ी</td><td class="c">संघर्षपूर्ण</td></tr>
+<tr><td><b>बांग्लादेश</b></td><td>राष्ट्र-निर्माण, दलीय प्रतिद्वंद्विता</td><td class="c">1990 से सुदृढ़</td><td class="c">सहयोगी</td></tr>
+<tr><td><b>श्रीलंका</b></td><td>सिंहली-तमिल जातीय संघर्ष</td><td class="c">स्थिर पर तनावग्रस्त</td><td class="c">मिश्रित</td></tr>
+<tr><td><b>नेपाल</b></td><td>राजतंत्र बनाम जनतंत्र</td><td class="c">2008 से गणतंत्र</td><td class="c">गहरा-साझा</td></tr>
+<tr><td><b>भूटान</b></td><td>राजतंत्र से संवैधानिक संक्रमण</td><td class="c">2008 से स्थापित</td><td class="c">सर्वाधिक घनिष्ठ</td></tr>
+<tr><td><b>मालदीव</b></td><td>राष्ट्रपति-सत्ता की प्रतिस्पर्धा</td><td class="c">अस्थिरता के चरण</td><td class="c">सुरक्षा-सहयोगी</td></tr>
+<tr><td><b>अफ़ग़ानिस्तान</b></td><td>गृहयुद्ध, तालिबान</td><td class="c">संकटग्रस्त</td><td class="c">विकास-सहयोगी</td></tr>
+</table>
+<div class="capt">तालिका 5 : समग्र तुलनात्मक दृष्टि</div>
+
+<div class="two">
+<div class="l">
+<div class="box y" style="margin:0"><span class="bt">महत्वपूर्ण तिथियाँ (परीक्षा-उपयोगी)</span>
+<table style="font-size:9.2pt;margin:1mm 0 0">
+<tr><td class="c" style="width:20%"><b>1947</b></td><td>भारत व पाकिस्तान की स्वतंत्रता</td></tr>
+<tr><td class="c"><b>1948</b></td><td>श्रीलंका स्वतंत्र</td></tr>
+<tr><td class="c"><b>1956</b></td><td>श्रीलंका में ‘सिंहली-केवल’ कानून</td></tr>
+<tr><td class="c"><b>1958</b></td><td>पाकिस्तान में प्रथम सैन्य शासन</td></tr>
+<tr><td class="c"><b>1971</b></td><td>बांग्लादेश का निर्माण; सिमला समझौता 1972</td></tr>
+<tr><td class="c"><b>1985</b></td><td>सार्क की स्थापना</td></tr>
+<tr><td class="c"><b>1990</b></td><td>नेपाल-बांग्लादेश में लोकतंत्र की बहाली</td></tr>
+<tr><td class="c"><b>1999</b></td><td>कारगिल युद्ध</td></tr>
+<tr><td class="c"><b>2005</b></td><td>नेपाल में राजा ज्ञानेंद्र का सत्ता-ग्रहण</td></tr>
+<tr><td class="c"><b>2006</b></td><td>नेपाल का जनांदोलन-4</td></tr>
+<tr><td class="c"><b>2008</b></td><td>नेपाल गणतंत्र; भूटान में लोकतांत्रिक चुनाव</td></tr>
+<tr><td class="c"><b>2009</b></td><td>श्रीलंका में LTTE का अंत</td></tr>
+</table></div>
+</div>
+<div class="r">
+<div class="drw" style="margin:0"><svg viewBox="0 0 120 150" style="width:100%;max-width:50mm">
+  <path d="M14 14 q10 10 0 20 q-10 10 0 20 q10 10 0 20 q-10 10 0 20 q10 10 0 20 q-10 10 0 20" fill="none" stroke="#c9a227" stroke-width="2.6" stroke-linecap="round"/>
+  <g font-family="Kalam" font-size="9.5" fill="#41505c">
+    <text x="34" y="22">स्वतंत्रता का दौर</text>
+    <text x="34" y="42">राजनीतिक प्रयोग</text>
+    <text x="34" y="62">युद्ध और विभाजन</text>
+    <text x="34" y="82">लोकतंत्र की लहर</text>
+    <text x="34" y="102">सार्क और सहयोग</text>
+    <text x="34" y="122">नई चुनौतियाँ</text>
+    <text x="34" y="142">साझा भविष्य</text>
+  </g>
+  <circle cx="14" cy="18" r="3.4" fill="#b3001b"/><circle cx="14" cy="58" r="3.4" fill="#e67e22"/><circle cx="14" cy="98" r="3.4" fill="#1a3c6e"/><circle cx="14" cy="138" r="3.4" fill="#2e7d32"/>
+</svg>
+<div class="cap">चित्र 10 : क्षेत्र का समय-जीवन रेखा</div></div>
+</div>
+</div>
+
+<div class="box g" style="margin-top:2.5mm"><span class="bt">क्या दक्षिण एशिया का विलय (एकता) संभव है?</span>
+<div style="font-size:10.1pt;line-height:1.5;margin-top:1mm">पाठ्यपुस्तक का यह प्रश्न गहन है। सकारात्मक संकेत — साझा इतिहास, लोकतंत्र की व्यापक लहर, सार्क-दक्षेस जैसी संस्थाएँ, लोगों का अपने-आप जुड़ाव (सिनेमा, संगीत, तीर्थ)। बाधाएँ — सीमा-विवाद, आतंकवाद, विश्वास की कमी। <b class="pt">याद रखें</b> : भारत-बांग्लादेश जल-संधि और भारत-भूटान साझेदारी सिद्ध करती है कि <b>ईमानदार संवाद से जटिल मुद्दे भी हल होते हैं</b>।</div></div>
+
+<div class="pgfoot"><b>15</b> &nbsp;•&nbsp; समग्र दृष्टि</div>
+</div>
+
+<!-- ═══════════════ PAGE 16 : निष्कर्ष ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#2e7d32" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#c9a227"/><circle cx="10" cy="58" r="3.4" fill="#c9a227"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="color:#2e7d32">निष्कर्ष</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#2e7d32" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#2e7d32"/></svg></div>
+
+<div class="drw"><svg viewBox="0 0 140 78" style="width:58mm;height:32mm">
+  <path d="M30 52 q10 -18 26 -10 q6 -12 18 -8 q12 2 12 12 q14 -2 16 8 q0 8 -12 8 l-52 0 q-10 0 -8 -10 Z" fill="#fff" stroke="#1a3c6e" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M96 20 q10 -8 16 -2 q6 6 -4 10" fill="#fff" stroke="#1a3c6e" stroke-width="2.4"/>
+  <circle cx="112" cy="16" r="3" fill="#c9a227"/>
+  <path d="M44 62 h44 M52 68 h28" stroke="#b9c4d0" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="20" cy="24" r="2.6" fill="#e67e22"/><circle cx="124" cy="34" r="2.6" fill="#2e7d32"/>
+</svg></div>
+<div class="capt">शांति का कबूतर — दक्षिण एशिया का सपना</div>
+
+<div class="body" style="margin-top:1mm">
+<p class="lead">इस परियोजना का अध्ययन हमें सिद्ध करता है कि <b class="hd">दक्षिण एशिया की पहचान उसकी विविधता है, और उसका भविष्य उसकी एकता</b>। हर देश ने अपने-अपने मार्ग पर लोकतंत्र के लिए संघर्ष किया — पाकिस्तान ने सैन्य छाया से, बांग्लादेश ने भाषा और युद्ध से, श्रीलंका ने जातीय घावों से, और नेपाल-भूटान ने राजसी इच्छा व जन-शक्ति से।</p>
+<p>तीन स्थायी सबक हमारे सामने हैं — <b>पहला</b>, लोकतंत्र एक प्रक्रिया है, घटना नहीं; इसे हर पीढ़ी को दोबारा जीना पड़ता है। <b>दूसरा</b>, साम्राज्यवादी विरासत और विभाजन के घाव तब भरते हैं जब संवाद, व्यापार और संस्कृति के पुल बनते हैं। <b>तीसरा</b>, भारत के लिए पड़ोस एक भार नहीं, एक <b class="pt">अवसर</b> है — समृद्ध नेपाल, शांत श्रीलंका और स्थिर पाकिस्तान ही भारत का सर्वोत्तम भविष्य गढ़ेंगे।</p>
+</div>
+
+<div class="box y"><span class="bt">परियोजना से व्यक्तिगत विकास</span>
+<div class="two" style="margin-top:1mm">
+<ul class="tick" style="flex:1;margin:0;font-size:10.2pt"><li>समाचार-विश्लेषण की दृष्टि विकसित हुई</li><li>तालिका-कालक्रम से तथ्य स्मरण सरल हुए</li><li>नक्शे-चित्र से भूगोल-राजनीति जुड़ी</li></ul>
+<ul class="tick" style="flex:1;margin:0;font-size:10.2pt"><li>प्रस्तुति एवं अनुक्रमण कौशल सुधरा</li><li>पड़ोसी नीतियों का सूक्ष्म अध्ययन हुआ</li><li>‘विविधता में एकता’ का व्यावहारिक बोध हुआ</li></ul>
+</div></div>
+
+<div class="quote">“ दक्षिण एशिया की अंतिम सीमा नक्शे की नहीं, विश्वास की है — जिस दिन सारे पड़ोसी विश्वास करेंगे, उसी दिन क्षेत्र पूर्ण होगा। ”</div>
+
+<div class="sig">
+  <div class="s" style="padding-top:4mm;font-size:11pt;color:#5a6874">परियोजना-कर्ता</div>
+  <div class="s"><div class="ln"></div><span style="font-size:10.5pt;color:#5a6874">नाम व हस्ताक्षर</span></div>
+  <div class="s" style="padding-top:4mm;font-size:11pt;color:#5a6874">मूल्यांकन : <span class="blank" style="min-width:18mm"></span> / 10</div>
+</div>
+<div class="pgfoot"><b>16</b> &nbsp;•&nbsp; निष्कर्ष</div>
+</div>
+
+<!-- ═══════════════ PAGE 17 : संदर्भ सूची ═══════════════ -->
+<div class="page">
+<div class="frame"></div>
+<div class="corner c-tl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-tr"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-bl"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+<div class="corner c-br"><svg viewBox="0 0 60 60"><path d="M2,58 C2,20 20,2 58,2" fill="none" stroke="#b3001b" stroke-width="3.2" stroke-linecap="round"/><circle cx="58" cy="10" r="3.4" fill="#1a3c6e"/><circle cx="10" cy="58" r="3.4" fill="#1a3c6e"/></svg></div>
+
+<div class="pghead"><svg class="dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#e67e22" stroke-width="2.4"/><circle cx="10" cy="10" r="3" fill="#b3001b"/></svg><div class="t">समकालीन दक्षिण एशिया • प्रोजेक्ट फाइल</div><div class="sub">राजनीति विज्ञान • कक्षा 12</div></div>
+
+<div class="sec-t" style="font-size:17pt">संदर्भ सूची (Bibliography)</div>
+<div class="rule"><svg viewBox="0 0 200 12"><path d="M0 6 H78 M122 6 H200" stroke="#c9a227" stroke-width="2"/><path d="M100 0 L106 6 L100 12 L94 6 Z" fill="#b3001b"/></svg></div>
+
+<div class="drw" style="margin-top:0"><svg viewBox="0 0 130 66" style="width:52mm;height:27mm">
+  <path d="M14 50 q22 -10 44 0 q22 10 44 0 L102 14 q-22 10 -44 0 q-22 -10 -44 0 Z" fill="#fff8e3" stroke="#1a3c6e" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M58 14 v36" stroke="#1a3c6e" stroke-width="2.4"/>
+  <path d="M22 24 q16 -6 30 0 M22 32 q16 -6 30 0 M78 24 q16 -6 30 0 M78 32 q16 -6 30 0" stroke="#b9c4d0" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <circle cx="112" cy="10" r="3" fill="#e67e22"/><circle cx="18" cy="10" r="3" fill="#2e7d32"/>
+</svg></div>
+<div class="capt">ज्ञान के स्रोत — ग्रंथ एवं संगणक जाल</div>
+
+<div class="box"><span class="bt">पुस्तकें / पाठ्य-सामग्री</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.6pt">
+<li><b>एन.सी.ई.आर.टी.</b> — <i>राजनीति विज्ञान का सिद्धांत और व्यवहार, भाग 2</i>, कक्षा 12, अध्याय 5 : «समकालीन दक्षिण एशिया», नई दिल्ली।</li>
+<li><b>एन.सी.ई.आर.टी.</b> — <i>राजनीति विज्ञान का सिद्धांत और व्यवहार, भाग 1</i>, कक्षा 12 (संदर्भ हेतु समकालीन विश्व राजनीति)।</li>
+<li>शास्त्री, शिवप्रसाद — <i>बहुविविधता का विलय : दक्षिण एशिया का राजनीति विज्ञान</i> (अध्ययन-संदर्भ)।</li>
+<li>C.B.S.E. — <i>राजनीति विज्ञान पाठ्यक्रम व परियोजना दिशानिर्देश</i>, शैक्षिक सत्र 2026–27।</li>
+</ul></div>
+
+<div class="box y"><span class="bt">संगणक-जाल (वेब) स्रोत</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.6pt">
+<li><b>ncert.nic.in</b> — पाठ्यपुस्तकों की अधिकृत पीडीएफ।</li>
+<li><b>mea.gov.in</b> — विदेश मंत्रालय, भारत — पड़ोसी देशों से द्विपक्षीय संबंध दस्तावेज़।</li>
+<li><b>saarc-sec.org</b> — सार्क सचिवालय, काठमांडू — चार्टर एवं सम्मेलन वृत्तांत।</li>
+<li><b>pib.gov.in</b> — सूचना एवं प्रसारण मंत्रालय — नीति-समाचार विज्ञप्तियाँ।</li>
+<li><b>censusindia.gov.in</b> व <b>worldbank.org</b> — जनसंख्या/विकास आँकड़े।</li>
+<li><b>thehindu.com</b>, <b>timesofindia.indiatimes.com</b>, <b>bbc.com/hindi</b> — समकालीन रिपोर्ट।</li>
+</ul></div>
+
+<div class="box g"><span class="bt">समाचार-पत्र एवं जर्नल</span>
+<ul class="tick" style="margin-top:1mm;font-size:10.5pt">
+<li>दैनिक <b>द हिन्दू</b> एवं <b>द इंडियन एक्सप्रेस</b> — संपादकीय व अंतरराष्ट्रीय पृष्ठ।</li>
+<li><b>फ्रंटलाइन</b> एवं <b>इंडिया टुडे</b> — विशेष कवर-स्टोरी (दक्षिण एशिया)।</li>
+<li>विद्यालय-पुस्तकालय की <b>सामयिक पत्रिकाएँ</b> एवं संदर्भ-ग्रंथ।</li>
+</ul></div>
+
+<div class="drw" style="margin-top:4mm"><svg viewBox="0 0 220 34" style="width:95mm;height:15mm">
+  <path d="M10 18 h70 M140 18 h70" stroke="#c9a227" stroke-width="2.4"/>
+  <text x="110" y="23" text-anchor="middle" font-family="Yatra One" font-size="15" fill="#b3001b">— प्रोजेक्ट समाप्त —</text>
+  <path d="M84 18 l6 -5 l6 5 l6 -5 l6 5 M124 18 l6 -5 l6 5" fill="none" stroke="#e67e22" stroke-width="2" stroke-linecap="round"/>
+</svg></div>
+<div class="capt">आपका बहुमूल्य समय एवं सहयोग के लिए धन्यवाद</div>
+
+<div class="sig">
+  <div class="s"><div class="ln"></div>प्रस्तुतकर्ता<br><span style="font-size:8.6pt">कक्षा 12 — राजनीति विज्ञान</span></div>
+  <div class="s"><div class="ln"></div>विषय शिक्षक<br><span style="font-size:8.6pt">मूल्यांकन एवं हस्ताक्षर</span></div>
+</div>
+<div class="pgfoot"><b>17</b> &nbsp;•&nbsp; संदर्भ सूची</div>
+</div>
+
+</body>
+</html>
