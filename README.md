@@ -6,9 +6,10 @@
 
 | क्या | लिंक |
 |---|---|
-| **PDF डाउनलोड (खोलते ही अपने आप डाउनलोड)** | https://cdn.jsdelivr.net/gh/ravi9689370-oss/samkalin-dakshin-eshiya@main/download-pdf.html |
-| PDF सीधे खोलें | https://cdn.jsdelivr.net/gh/ravi9689370-oss/samkalin-dakshin-eshiya@main/samkalin_dakshin_eshiya_project.pdf |
-| HTML रूप में देखें (प्रिंट बटन सहित) | https://cdn.jsdelivr.net/gh/ravi9689370-oss/samkalin-dakshin-eshiya@main/samkalin-dakshin-eshiya-project.html |
+| **PDF डाउनलोड (एक क्लिक, सीधा)** | https://github.com/ravi9689370-oss/samkalin-dakshin-eshiya/releases/latest/download/samkalin_dakshin_eshiya_project.pdf |
+| प्रोजेक्ट वेबसाइट (सब कुछ एक जगह) | https://ravi9689370-oss.github.io/samkalin-dakshin-eshiya/ |
+| PDF सीधे खोलें | https://ravi9689370-oss.github.io/samkalin-dakshin-eshiya/samkalin_dakshin_eshiya_project.pdf |
+| HTML रूप में प्रोजेक्ट देखें | https://ravi9689370-oss.github.io/samkalin-dakshin-eshiya/samkalin-dakshin-eshiya-project.html |
 
 ## प्रोजेक्ट में क्या-क्या है
 
