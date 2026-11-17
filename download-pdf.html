@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⬇ डाउनलोड — समकालीन दक्षिण एशिया प्रोजेक्ट</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:'Kalam',cursive;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:#fff;padding:24px}
+.card{max-width:560px;width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:36px 32px;text-align:center;backdrop-filter:blur(8px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+h1{font-family:'Yatra One',cursive;font-size:1.7rem;line-height:1.4;margin-bottom:6px}
+.sub{opacity:.85;font-size:1.02rem;margin-bottom:22px}
+#bar{height:10px;background:rgba(255,255,255,.15);border-radius:99px;overflow:hidden;margin:0 8px 10px}
+#fill{height:100%;width:0%;background:linear-gradient(90deg,#43cea2,#185a9d);border-radius:99px;transition:width .25s}
+#status{font-size:1.02rem;min-height:1.5em;margin-bottom:18px}
+button{font-family:'Kalam',cursive;font-size:1.15rem;font-weight:700;padding:12px 28px;border:none;border-radius:12px;background:linear-gradient(135deg,#f6d365,#fda085);color:#3a2200;cursor:pointer;box-shadow:0 8px 24px rgba(253,160,133,.35)}
+button:disabled{opacity:.55;cursor:wait}
+.note{margin-top:16px;font-size:.92rem;opacity:.8}
+.note a{color:#ffd98a}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>समकालीन दक्षिण एशिया</h1>
+<div class="sub">कक्षा 12 • राजनीति विज्ञान • प्रोजेक्ट फाइल (17 पेज, A4)</div>
+<div id="bar"><div id="fill"></div></div>
+<div id="status">शुरू हो रहा है…</div>
+<button id="btn">⬇ PDF डाउनलोड करें</button>
+<div class="note">अगर डाउनलोड न शुरू हो, तो <a id="direct" href="samkalin_dakshin_eshiya_project.pdf" download>यहाँ क्लिक करें</a> — PDF सीधे खुल जाएगा।</div>
+</div>
+<script>
+const st=document.getElementById('status'),fill=document.getElementById('fill'),btn=document.getElementById('btn');
+function save(blob){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='samkalin_dakshin_eshiya_project.pdf';
+  document.body.appendChild(a);a.click();a.remove();
+}
+async function go(){
+  btn.disabled=true;
+  try{
+    st.textContent='PDF लोड हो रहा है…';fill.style.width='20%';
+    const r=await fetch('samkalin_dakshin_eshiya_project.pdf');
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    st.textContent='डाउनलोड के लिए तैयार हो रहा है…';fill.style.width='60%';
+    const blob=await r.blob();
+    fill.style.width='100%';
+    if(blob.size<1000000)throw new Error('फाइल अधूरी आई ('+blob.size+' bytes)');
+    st.textContent='PDF तैयार ('+(blob.size/1048576).toFixed(2)+' MB) — डाउनलोड शुरू ✔';
+    save(blob);
+  }catch(e){
+    st.textContent='⚠ समस्या: '+e.message+' — नीचे दिया लिंक आज़माएँ';
+  }
+  btn.disabled=false;
+}
+btn.addEventListener('click',go);go();
+</script>
+</body></html>
